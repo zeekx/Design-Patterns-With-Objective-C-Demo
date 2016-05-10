@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A541E6D01CE0962B00C6BF92 /* Vertex.m in Sources */ = {isa = PBXBuildFile; fileRef = A541E6CF1CE0962B00C6BF92 /* Vertex.m */; };
+		A541E6D31CE16F6C00C6BF92 /* Dot.m in Sources */ = {isa = PBXBuildFile; fileRef = A541E6D21CE16F6C00C6BF92 /* Dot.m */; };
+		A541E6D61CE1752400C6BF92 /* Stroke.m in Sources */ = {isa = PBXBuildFile; fileRef = A541E6D51CE1752400C6BF92 /* Stroke.m */; };
 		A5F45D511CA50F130060ED01 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A5F45D501CA50F130060ED01 /* main.m */; };
 		A5F45D541CA50F130060ED01 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A5F45D531CA50F130060ED01 /* AppDelegate.m */; };
 		A5F45D571CA50F130060ED01 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A5F45D561CA50F130060ED01 /* ViewController.m */; };
@@ -17,6 +20,12 @@
 
 /* Begin PBXFileReference section */
 		A53F750C1CDC92F20020467C /* Mark.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Mark.h; sourceTree = "<group>"; };
+		A541E6CE1CE0962B00C6BF92 /* Vertex.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Vertex.h; sourceTree = "<group>"; };
+		A541E6CF1CE0962B00C6BF92 /* Vertex.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Vertex.m; sourceTree = "<group>"; };
+		A541E6D11CE16F6C00C6BF92 /* Dot.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Dot.h; sourceTree = "<group>"; };
+		A541E6D21CE16F6C00C6BF92 /* Dot.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Dot.m; sourceTree = "<group>"; };
+		A541E6D41CE1752400C6BF92 /* Stroke.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Stroke.h; sourceTree = "<group>"; };
+		A541E6D51CE1752400C6BF92 /* Stroke.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Stroke.m; sourceTree = "<group>"; };
 		A5F45D4C1CA50F130060ED01 /* Design Patterns With Objective-c Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Design Patterns With Objective-c Demo.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A5F45D501CA50F130060ED01 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		A5F45D521CA50F130060ED01 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -69,6 +78,12 @@
 				A5F45D601CA50F130060ED01 /* Info.plist */,
 				A5F45D4F1CA50F130060ED01 /* Supporting Files */,
 				A53F750C1CDC92F20020467C /* Mark.h */,
+				A541E6D41CE1752400C6BF92 /* Stroke.h */,
+				A541E6D51CE1752400C6BF92 /* Stroke.m */,
+				A541E6D11CE16F6C00C6BF92 /* Dot.h */,
+				A541E6D21CE16F6C00C6BF92 /* Dot.m */,
+				A541E6CE1CE0962B00C6BF92 /* Vertex.h */,
+				A541E6CF1CE0962B00C6BF92 /* Vertex.m */,
 			);
 			path = "Design Patterns With Objective-c Demo";
 			sourceTree = "<group>";
@@ -153,8 +168,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				A5F45D571CA50F130060ED01 /* ViewController.m in Sources */,
+				A541E6D01CE0962B00C6BF92 /* Vertex.m in Sources */,
 				A5F45D541CA50F130060ED01 /* AppDelegate.m in Sources */,
+				A541E6D31CE16F6C00C6BF92 /* Dot.m in Sources */,
 				A5F45D511CA50F130060ED01 /* main.m in Sources */,
+				A541E6D61CE1752400C6BF92 /* Stroke.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
