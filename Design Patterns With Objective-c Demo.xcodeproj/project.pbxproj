@@ -7,6 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A505C7721D17F6970063588A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A505C7711D17F6970063588A /* main.m */; };
+		A505C7751D17F6970063588A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A505C7741D17F6970063588A /* AppDelegate.m */; };
+		A505C7781D17F6970063588A /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A505C7771D17F6970063588A /* ViewController.m */; };
+		A505C77B1D17F6970063588A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A505C7791D17F6970063588A /* Main.storyboard */; };
+		A505C77D1D17F6970063588A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A505C77C1D17F6970063588A /* Assets.xcassets */; };
+		A505C7801D17F6970063588A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A505C77E1D17F6970063588A /* LaunchScreen.storyboard */; };
+		A505C7871D17F6BF0063588A /* Character.m in Sources */ = {isa = PBXBuildFile; fileRef = A505C7861D17F6BF0063588A /* Character.m */; };
+		A505C78A1D17F7B00063588A /* CharacterBuilder.m in Sources */ = {isa = PBXBuildFile; fileRef = A505C7891D17F7B00063588A /* CharacterBuilder.m */; };
+		A505C78D1D17F9750063588A /* StandardCharacterBuilder.m in Sources */ = {isa = PBXBuildFile; fileRef = A505C78C1D17F9750063588A /* StandardCharacterBuilder.m */; };
+		A505C7901D18D0E00063588A /* ChasingGame.m in Sources */ = {isa = PBXBuildFile; fileRef = A505C78F1D18D0E00063588A /* ChasingGame.m */; };
 		A541E6D01CE0962B00C6BF92 /* Vertex.m in Sources */ = {isa = PBXBuildFile; fileRef = A541E6CF1CE0962B00C6BF92 /* Vertex.m */; };
 		A541E6D31CE16F6C00C6BF92 /* Dot.m in Sources */ = {isa = PBXBuildFile; fileRef = A541E6D21CE16F6C00C6BF92 /* Dot.m */; };
 		A541E6D61CE1752400C6BF92 /* Stroke.m in Sources */ = {isa = PBXBuildFile; fileRef = A541E6D51CE1752400C6BF92 /* Stroke.m */; };
@@ -26,6 +36,24 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		A505C76E1D17F6970063588A /* Chapter06.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Chapter06.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A505C7711D17F6970063588A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		A505C7731D17F6970063588A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		A505C7741D17F6970063588A /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		A505C7761D17F6970063588A /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		A505C7771D17F6970063588A /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		A505C77A1D17F6970063588A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		A505C77C1D17F6970063588A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A505C77F1D17F6970063588A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		A505C7811D17F6970063588A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A505C7851D17F6BF0063588A /* Character.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Character.h; sourceTree = "<group>"; };
+		A505C7861D17F6BF0063588A /* Character.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Character.m; sourceTree = "<group>"; };
+		A505C7881D17F7B00063588A /* CharacterBuilder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CharacterBuilder.h; sourceTree = "<group>"; };
+		A505C7891D17F7B00063588A /* CharacterBuilder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CharacterBuilder.m; sourceTree = "<group>"; };
+		A505C78B1D17F9750063588A /* StandardCharacterBuilder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StandardCharacterBuilder.h; sourceTree = "<group>"; };
+		A505C78C1D17F9750063588A /* StandardCharacterBuilder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StandardCharacterBuilder.m; sourceTree = "<group>"; };
+		A505C78E1D18D0E00063588A /* ChasingGame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChasingGame.h; sourceTree = "<group>"; };
+		A505C78F1D18D0E00063588A /* ChasingGame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChasingGame.m; sourceTree = "<group>"; };
 		A53F750C1CDC92F20020467C /* Mark.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Mark.h; sourceTree = "<group>"; };
 		A541E6CE1CE0962B00C6BF92 /* Vertex.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Vertex.h; sourceTree = "<group>"; };
 		A541E6CF1CE0962B00C6BF92 /* Vertex.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Vertex.m; sourceTree = "<group>"; };
@@ -60,6 +88,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		A505C76B1D17F6970063588A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		A5F45D491CA50F130060ED01 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -70,6 +105,38 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A505C76F1D17F6970063588A /* Chapter06 */ = {
+			isa = PBXGroup;
+			children = (
+				A505C7731D17F6970063588A /* AppDelegate.h */,
+				A505C7741D17F6970063588A /* AppDelegate.m */,
+				A505C7761D17F6970063588A /* ViewController.h */,
+				A505C7771D17F6970063588A /* ViewController.m */,
+				A505C7791D17F6970063588A /* Main.storyboard */,
+				A505C7851D17F6BF0063588A /* Character.h */,
+				A505C7861D17F6BF0063588A /* Character.m */,
+				A505C78E1D18D0E00063588A /* ChasingGame.h */,
+				A505C78F1D18D0E00063588A /* ChasingGame.m */,
+				A505C7881D17F7B00063588A /* CharacterBuilder.h */,
+				A505C7891D17F7B00063588A /* CharacterBuilder.m */,
+				A505C78B1D17F9750063588A /* StandardCharacterBuilder.h */,
+				A505C78C1D17F9750063588A /* StandardCharacterBuilder.m */,
+				A505C77C1D17F6970063588A /* Assets.xcassets */,
+				A505C77E1D17F6970063588A /* LaunchScreen.storyboard */,
+				A505C7811D17F6970063588A /* Info.plist */,
+				A505C7701D17F6970063588A /* Supporting Files */,
+			);
+			path = Chapter06;
+			sourceTree = "<group>";
+		};
+		A505C7701D17F6970063588A /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				A505C7711D17F6970063588A /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
 		A5BFED1C1CE466C60000ED7A /* View */ = {
 			isa = PBXGroup;
 			children = (
@@ -126,6 +193,7 @@
 			isa = PBXGroup;
 			children = (
 				A5F45D4E1CA50F130060ED01 /* Design Patterns With Objective-c Demo */,
+				A505C76F1D17F6970063588A /* Chapter06 */,
 				A5F45D4D1CA50F130060ED01 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -134,6 +202,7 @@
 			isa = PBXGroup;
 			children = (
 				A5F45D4C1CA50F130060ED01 /* Design Patterns With Objective-c Demo.app */,
+				A505C76E1D17F6970063588A /* Chapter06.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -166,6 +235,23 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		A505C76D1D17F6970063588A /* Chapter06 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A505C7841D17F6970063588A /* Build configuration list for PBXNativeTarget "Chapter06" */;
+			buildPhases = (
+				A505C76A1D17F6970063588A /* Sources */,
+				A505C76B1D17F6970063588A /* Frameworks */,
+				A505C76C1D17F6970063588A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Chapter06;
+			productName = Chapter06;
+			productReference = A505C76E1D17F6970063588A /* Chapter06.app */;
+			productType = "com.apple.product-type.application";
+		};
 		A5F45D4B1CA50F130060ED01 /* Design Patterns With Objective-c Demo */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = A5F45D631CA50F130060ED01 /* Build configuration list for PBXNativeTarget "Design Patterns With Objective-c Demo" */;
@@ -192,6 +278,9 @@
 				LastUpgradeCheck = 0720;
 				ORGANIZATIONNAME = Zeek;
 				TargetAttributes = {
+					A505C76D1D17F6970063588A = {
+						CreatedOnToolsVersion = 7.3.1;
+					};
 					A5F45D4B1CA50F130060ED01 = {
 						CreatedOnToolsVersion = 7.2.1;
 						DevelopmentTeam = X669CU522Z;
@@ -212,11 +301,22 @@
 			projectRoot = "";
 			targets = (
 				A5F45D4B1CA50F130060ED01 /* Design Patterns With Objective-c Demo */,
+				A505C76D1D17F6970063588A /* Chapter06 */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		A505C76C1D17F6970063588A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A505C7801D17F6970063588A /* LaunchScreen.storyboard in Resources */,
+				A505C77D1D17F6970063588A /* Assets.xcassets in Resources */,
+				A505C77B1D17F6970063588A /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		A5F45D4A1CA50F130060ED01 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -230,6 +330,20 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		A505C76A1D17F6970063588A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A505C78A1D17F7B00063588A /* CharacterBuilder.m in Sources */,
+				A505C7781D17F6970063588A /* ViewController.m in Sources */,
+				A505C7751D17F6970063588A /* AppDelegate.m in Sources */,
+				A505C7721D17F6970063588A /* main.m in Sources */,
+				A505C78D1D17F9750063588A /* StandardCharacterBuilder.m in Sources */,
+				A505C7901D18D0E00063588A /* ChasingGame.m in Sources */,
+				A505C7871D17F6BF0063588A /* Character.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		A5F45D481CA50F130060ED01 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -253,6 +367,22 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
+		A505C7791D17F6970063588A /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A505C77A1D17F6970063588A /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		A505C77E1D17F6970063588A /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A505C77F1D17F6970063588A /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
 		A5F45D581CA50F130060ED01 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -272,6 +402,36 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		A505C7821D17F6970063588A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_SECURITY_INSECUREAPI_UNCHECKEDRETURN = NO;
+				GCC_WARN_STRICT_SELECTOR_MATCH = YES;
+				INFOPLIST_FILE = Chapter06/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.kingsoft.zeek.Chapter06;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		A505C7831D17F6970063588A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_SECURITY_INSECUREAPI_UNCHECKEDRETURN = NO;
+				GCC_WARN_STRICT_SELECTOR_MATCH = YES;
+				INFOPLIST_FILE = Chapter06/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.kingsoft.zeek.Chapter06;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
 		A5F45D611CA50F130060ED01 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -385,6 +545,14 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		A505C7841D17F6970063588A /* Build configuration list for PBXNativeTarget "Chapter06" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A505C7821D17F6970063588A /* Debug */,
+				A505C7831D17F6970063588A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
 		A5F45D471CA50F130060ED01 /* Build configuration list for PBXProject "Design Patterns With Objective-c Demo" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

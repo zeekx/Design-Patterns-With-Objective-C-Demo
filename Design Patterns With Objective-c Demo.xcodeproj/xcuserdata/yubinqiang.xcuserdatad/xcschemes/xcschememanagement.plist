@@ -4,6 +4,11 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
+		<key>Chapter06.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>1</integer>
+		</dict>
 		<key>Design Patterns With Objective-c Demo.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
@@ -12,6 +17,11 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
+		<key>A505C76D1D17F6970063588A</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>A5F45D4B1CA50F130060ED01</key>
 		<dict>
 			<key>primary</key>
