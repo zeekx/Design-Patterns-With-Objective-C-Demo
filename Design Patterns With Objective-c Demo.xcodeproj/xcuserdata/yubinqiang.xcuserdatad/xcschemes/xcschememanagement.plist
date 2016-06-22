@@ -9,6 +9,11 @@
 			<key>orderHint</key>
 			<integer>1</integer>
 		</dict>
+		<key>Chapter09.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>2</integer>
+		</dict>
 		<key>Design Patterns With Objective-c Demo.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
@@ -18,6 +23,11 @@
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
 		<key>A505C76D1D17F6970063588A</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>A505C7A81D1A33290063588A</key>
 		<dict>
 			<key>primary</key>
 			<true/>

@@ -15,15 +15,12 @@
     CGFloat redValue = 0;
     CGFloat greenValue = 0.0F;
     CGFloat blueValue = 0.0F;
-    if ([self.delegate respondsToSelector:@selector(command:didRequestColorComponentrsForRed:green:blue:)]) {
-        [self.delegate command:self didRequestColorComponentrsForRed:&redValue green:&greenValue blue:&blueValue];
+    CGFloat alphaValue = 1.0F;
+    
+    if (self.rgbValuesProvider != NULL) {
+        self.rgbValuesProvider(&redValue, &greenValue, &blueValue);
     }
-    
-    
-    UIColor *color = [UIColor colorWithRed:redValue green:greenValue blue:blueValue alpha:1.0F];
+    UIColor *color = [UIColor colorWithRed:redValue green:greenValue blue:blueValue alpha:alphaValue];
     [CoordinatingController sharedCoordinatingController].canvasViewController.strokeColor = color;
-    if ([self.delegate respondsToSelector:@selector(command:didFinishColorUpdateWithColor:)]) {
-        [self.delegate command:self didFinishColorUpdateWithColor:color];
-    }
 }
 @end

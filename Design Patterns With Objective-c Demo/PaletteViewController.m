@@ -16,6 +16,17 @@
 @end
 
 @implementation PaletteViewController
+
+- (void)viewDidLoad {
+    [super viewDidLoad];
+    SetStrokeColorCommand *colorCommand;
+    colorCommand.rgbValuesProvider = ^(CGFloat *red, CGFloat *green, CGFloat *blue){
+        *red = self.redSlider.value;
+        *green = self.greenSlider.value;
+        *blue = self.blueSlider.value;
+    };
+}
+
 - (IBAction)onCommandSliderValueChanged:(CommandSlider *)sender {
     [sender.command execute];
 }

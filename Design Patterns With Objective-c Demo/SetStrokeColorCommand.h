@@ -11,11 +11,11 @@
 #import "Command.h"
 
 @protocol SetStrokeColorCommandDelegate;
-typedef void(^RGBAValuesProvider)(CGFloat *red, CGFloat *green, CGFloat *blue, CGFloat *alpha);
+typedef void (^RGBValuesProvider)(CGFloat *red, CGFloat *green, CGFloat *blue);
 
 @interface SetStrokeColorCommand : Command
 @property (nonatomic, weak  ) id<SetStrokeColorCommandDelegate> delegate;
-@property (nonatomic, copy  ) RGBAValuesProvider rgbaValuesProvider;
+@property (nonatomic, copy  ) RGBValuesProvider rgbValuesProvider;
 @end
 
 
