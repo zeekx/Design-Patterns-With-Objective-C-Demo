@@ -17,6 +17,11 @@
 		A505C78A1D17F7B00063588A /* CharacterBuilder.m in Sources */ = {isa = PBXBuildFile; fileRef = A505C7891D17F7B00063588A /* CharacterBuilder.m */; };
 		A505C78D1D17F9750063588A /* StandardCharacterBuilder.m in Sources */ = {isa = PBXBuildFile; fileRef = A505C78C1D17F9750063588A /* StandardCharacterBuilder.m */; };
 		A505C7901D18D0E00063588A /* ChasingGame.m in Sources */ = {isa = PBXBuildFile; fileRef = A505C78F1D18D0E00063588A /* ChasingGame.m */; };
+		A505C7961D1919CF0063588A /* Command.m in Sources */ = {isa = PBXBuildFile; fileRef = A505C7951D1919CF0063588A /* Command.m */; };
+		A505C79B1D191AC60063588A /* SetStrokeColorCommand.m in Sources */ = {isa = PBXBuildFile; fileRef = A505C79A1D191AC60063588A /* SetStrokeColorCommand.m */; };
+		A505C79E1D191DB20063588A /* CoordinatingController.m in Sources */ = {isa = PBXBuildFile; fileRef = A505C79D1D191DB20063588A /* CoordinatingController.m */; };
+		A505C7A11D1937DC0063588A /* CommandSlider.m in Sources */ = {isa = PBXBuildFile; fileRef = A505C7A01D1937DC0063588A /* CommandSlider.m */; };
+		A505C7A41D193CB80063588A /* PaletteViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A505C7A31D193CB80063588A /* PaletteViewController.m */; };
 		A541E6D01CE0962B00C6BF92 /* Vertex.m in Sources */ = {isa = PBXBuildFile; fileRef = A541E6CF1CE0962B00C6BF92 /* Vertex.m */; };
 		A541E6D31CE16F6C00C6BF92 /* Dot.m in Sources */ = {isa = PBXBuildFile; fileRef = A541E6D21CE16F6C00C6BF92 /* Dot.m */; };
 		A541E6D61CE1752400C6BF92 /* Stroke.m in Sources */ = {isa = PBXBuildFile; fileRef = A541E6D51CE1752400C6BF92 /* Stroke.m */; };
@@ -54,6 +59,16 @@
 		A505C78C1D17F9750063588A /* StandardCharacterBuilder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StandardCharacterBuilder.m; sourceTree = "<group>"; };
 		A505C78E1D18D0E00063588A /* ChasingGame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChasingGame.h; sourceTree = "<group>"; };
 		A505C78F1D18D0E00063588A /* ChasingGame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChasingGame.m; sourceTree = "<group>"; };
+		A505C7941D1919CF0063588A /* Command.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Command.h; sourceTree = "<group>"; };
+		A505C7951D1919CF0063588A /* Command.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Command.m; sourceTree = "<group>"; };
+		A505C7991D191AC60063588A /* SetStrokeColorCommand.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SetStrokeColorCommand.h; sourceTree = "<group>"; };
+		A505C79A1D191AC60063588A /* SetStrokeColorCommand.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SetStrokeColorCommand.m; sourceTree = "<group>"; };
+		A505C79C1D191DB20063588A /* CoordinatingController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CoordinatingController.h; sourceTree = "<group>"; };
+		A505C79D1D191DB20063588A /* CoordinatingController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CoordinatingController.m; sourceTree = "<group>"; };
+		A505C79F1D1937DC0063588A /* CommandSlider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CommandSlider.h; sourceTree = "<group>"; };
+		A505C7A01D1937DC0063588A /* CommandSlider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CommandSlider.m; sourceTree = "<group>"; };
+		A505C7A21D193CB80063588A /* PaletteViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PaletteViewController.h; sourceTree = "<group>"; };
+		A505C7A31D193CB80063588A /* PaletteViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PaletteViewController.m; sourceTree = "<group>"; };
 		A53F750C1CDC92F20020467C /* Mark.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Mark.h; sourceTree = "<group>"; };
 		A541E6CE1CE0962B00C6BF92 /* Vertex.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Vertex.h; sourceTree = "<group>"; };
 		A541E6CF1CE0962B00C6BF92 /* Vertex.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Vertex.m; sourceTree = "<group>"; };
@@ -137,6 +152,15 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		A505C7971D191A4B0063588A /* Command */ = {
+			isa = PBXGroup;
+			children = (
+				A505C7941D1919CF0063588A /* Command.h */,
+				A505C7951D1919CF0063588A /* Command.m */,
+			);
+			name = Command;
+			sourceTree = "<group>";
+		};
 		A5BFED1C1CE466C60000ED7A /* View */ = {
 			isa = PBXGroup;
 			children = (
@@ -147,6 +171,8 @@
 				A5BFED201CE4672E0000ED7A /* PaperCanvasView.m */,
 				A5BFED221CE4675C0000ED7A /* ClothCanvasView.h */,
 				A5BFED231CE4675C0000ED7A /* ClothCanvasView.m */,
+				A505C79F1D1937DC0063588A /* CommandSlider.h */,
+				A505C7A01D1937DC0063588A /* CommandSlider.m */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -172,6 +198,10 @@
 				A5F45D561CA50F130060ED01 /* ViewController.m */,
 				A5BFED2F1CE46E350000ED7A /* CanvasViewController.h */,
 				A5BFED301CE46E350000ED7A /* CanvasViewController.m */,
+				A505C79C1D191DB20063588A /* CoordinatingController.h */,
+				A505C79D1D191DB20063588A /* CoordinatingController.m */,
+				A505C7A21D193CB80063588A /* PaletteViewController.h */,
+				A505C7A31D193CB80063588A /* PaletteViewController.m */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -220,6 +250,9 @@
 				A5F45D601CA50F130060ED01 /* Info.plist */,
 				A5F45D4F1CA50F130060ED01 /* Supporting Files */,
 				A5BFED281CE468780000ED7A /* Factory */,
+				A505C7971D191A4B0063588A /* Command */,
+				A505C7991D191AC60063588A /* SetStrokeColorCommand.h */,
+				A505C79A1D191AC60063588A /* SetStrokeColorCommand.m */,
 			);
 			path = "Design Patterns With Objective-c Demo";
 			sourceTree = "<group>";
@@ -351,15 +384,20 @@
 				A5BFED271CE468720000ED7A /* CanvasViewGenerator.m in Sources */,
 				A5BFED2E1CE468AD0000ED7A /* ClothCanvasViewGenerator.m in Sources */,
 				A5F45D571CA50F130060ED01 /* ViewController.m in Sources */,
+				A505C7961D1919CF0063588A /* Command.m in Sources */,
 				A5BFED311CE46E350000ED7A /* CanvasViewController.m in Sources */,
 				A541E6D01CE0962B00C6BF92 /* Vertex.m in Sources */,
 				A5BFED2B1CE4689C0000ED7A /* PaperCanvasViewGenerator.m in Sources */,
 				A5BFED241CE4675C0000ED7A /* ClothCanvasView.m in Sources */,
+				A505C79E1D191DB20063588A /* CoordinatingController.m in Sources */,
 				A5F45D541CA50F130060ED01 /* AppDelegate.m in Sources */,
+				A505C79B1D191AC60063588A /* SetStrokeColorCommand.m in Sources */,
 				A5BFED211CE4672E0000ED7A /* PaperCanvasView.m in Sources */,
+				A505C7A41D193CB80063588A /* PaletteViewController.m in Sources */,
 				A541E6D31CE16F6C00C6BF92 /* Dot.m in Sources */,
 				A5BFED1B1CE466BC0000ED7A /* CanvasView.m in Sources */,
 				A5F45D511CA50F130060ED01 /* main.m in Sources */,
+				A505C7A11D1937DC0063588A /* CommandSlider.m in Sources */,
 				A541E6D61CE1752400C6BF92 /* Stroke.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -552,6 +590,7 @@
 				A505C7831D17F6970063588A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A5F45D471CA50F130060ED01 /* Build configuration list for PBXProject "Design Patterns With Objective-c Demo" */ = {
 			isa = XCConfigurationList;

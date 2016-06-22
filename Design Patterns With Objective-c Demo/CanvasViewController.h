@@ -9,5 +9,5 @@
 #import <UIKit/UIKit.h>
 
 @interface CanvasViewController : UIViewController
-
+@property (strong, nonatomic) UIColor *strokeColor;
 @end

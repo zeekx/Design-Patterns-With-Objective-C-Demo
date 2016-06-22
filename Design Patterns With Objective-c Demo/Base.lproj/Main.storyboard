@@ -1,14 +1,15 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Canvas View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="CanvasViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -18,10 +19,85 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
+                    <navigationItem key="navigationItem" id="EL1-2g-YHT"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="311" y="482"/>
+            <point key="canvasLocation" x="1043" y="319"/>
+        </scene>
+        <!--Palette View Controller-->
+        <scene sceneID="Atc-Qk-DV8">
+            <objects>
+                <viewController id="Uum-cC-pNB" customClass="PaletteViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="bOn-Gh-MTK"/>
+                        <viewControllerLayoutGuide type="bottom" id="HFN-qA-6A9"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="AZo-Tb-ZJr">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="qUp-2F-h1o">
+                                <rect key="frame" x="18" y="474" width="564" height="31"/>
+                            </slider>
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="ML9-V9-qsH">
+                                <rect key="frame" x="18" y="512" width="564" height="31"/>
+                            </slider>
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="THg-md-Nvr">
+                                <rect key="frame" x="18" y="550" width="564" height="31"/>
+                                <connections>
+                                    <action selector="onCommandSliderValueChanged:" destination="Uum-cC-pNB" eventType="valueChanged" id="Gcd-OJ-AQU"/>
+                                </connections>
+                            </slider>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="THg-md-Nvr" firstAttribute="trailing" secondItem="qUp-2F-h1o" secondAttribute="trailing" id="CQV-6j-TjM"/>
+                            <constraint firstItem="qUp-2F-h1o" firstAttribute="trailing" secondItem="AZo-Tb-ZJr" secondAttribute="trailingMargin" id="Cqf-aY-ZGo"/>
+                            <constraint firstItem="ML9-V9-qsH" firstAttribute="leading" secondItem="qUp-2F-h1o" secondAttribute="leading" id="FG4-80-5d6"/>
+                            <constraint firstItem="ML9-V9-qsH" firstAttribute="trailing" secondItem="qUp-2F-h1o" secondAttribute="trailing" id="KcM-2B-1R5"/>
+                            <constraint firstItem="HFN-qA-6A9" firstAttribute="top" secondItem="THg-md-Nvr" secondAttribute="bottom" constant="20" id="NdL-py-8YG"/>
+                            <constraint firstItem="THg-md-Nvr" firstAttribute="leading" secondItem="qUp-2F-h1o" secondAttribute="leading" id="TVS-xv-ASo"/>
+                            <constraint firstItem="THg-md-Nvr" firstAttribute="top" secondItem="ML9-V9-qsH" secondAttribute="bottom" constant="8" id="TuH-3W-YIz"/>
+                            <constraint firstItem="THg-md-Nvr" firstAttribute="leading" secondItem="AZo-Tb-ZJr" secondAttribute="leadingMargin" id="a55-66-762"/>
+                            <constraint firstItem="ML9-V9-qsH" firstAttribute="top" secondItem="qUp-2F-h1o" secondAttribute="bottom" constant="8" id="jIx-0C-gYN"/>
+                            <constraint firstItem="THg-md-Nvr" firstAttribute="trailing" secondItem="AZo-Tb-ZJr" secondAttribute="trailingMargin" id="qhS-n3-gCA"/>
+                            <constraint firstItem="qUp-2F-h1o" firstAttribute="leading" secondItem="AZo-Tb-ZJr" secondAttribute="leadingMargin" id="qj5-UA-NL8"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="a55-66-762"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <navigationItem key="navigationItem" id="pdL-jy-dCL"/>
+                    <connections>
+                        <outlet property="blueSlider" destination="THg-md-Nvr" id="XM0-Ef-nar"/>
+                        <outlet property="greenSlider" destination="ML9-V9-qsH" id="te8-Xi-XpQ"/>
+                        <outlet property="redSlider" destination="qUp-2F-h1o" id="IPf-mr-9KX"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gLO-Nn-HcW" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1777" y="991"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="rUb-9G-fAA">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="XUd-vH-ujs" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="weH-1Y-S7d">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="Uum-cC-pNB" kind="relationship" relationship="rootViewController" id="xi6-hp-xpK"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0VF-Mj-ni2" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="965" y="991"/>
         </scene>
     </scenes>
 </document>
