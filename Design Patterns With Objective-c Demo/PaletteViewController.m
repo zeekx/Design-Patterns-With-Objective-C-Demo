@@ -19,25 +19,20 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    //1. Set value of slider
+    //2. Set slider.command.rgbValuesProvider
     SetStrokeColorCommand *colorCommand;
     colorCommand.rgbValuesProvider = ^(CGFloat *red, CGFloat *green, CGFloat *blue){
         *red = self.redSlider.value;
         *green = self.greenSlider.value;
         *blue = self.blueSlider.value;
     };
+    self.title = @"Palette";
+    [self.navigationController setNavigationBarHidden:NO];
+    self.navigationController.toolbarHidden = YES;
 }
 
 - (IBAction)onCommandSliderValueChanged:(CommandSlider *)sender {
     [sender.command execute];
-}
-
-#pragma mark - Set stroke color command delegate
-- (void)command:(SetStrokeColorCommand *)command didFinishColorUpdateWithColor:(UIColor *)color {
-    
-}
-
-
-- (void)command:(SetStrokeColorCommand *)command didRequestColorComponentrsForRed:(CGFloat *)red green:(CGFloat *)green blue:(CGFloat *)blue {
-    
 }
 @end

@@ -9,6 +9,6 @@
 #import <UIKit/UIKit.h>
 #import "SetStrokeColorCommand.h"
 
-@interface PaletteViewController : UIViewController <SetStrokeColorCommandDelegate>
+@interface PaletteViewController : UIViewController
 
 @end

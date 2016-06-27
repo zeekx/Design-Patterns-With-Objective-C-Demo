@@ -7,8 +7,25 @@
 //
 
 #import <Foundation/Foundation.h>
+#import <UIKit/UIKit.h>
+
+typedef NS_ENUM(NSInteger, BarButtonItemTag) {
+    kBarButtonItemTagSaveScribble,
+    kBarButtonItemTagOpenScribble,
+    kBarButtonItemTagOpenPaletteView,
+    kBarButtonItemTagUnDo,
+    kBarButtonItemTagReDo,
+    kBarButtonItemTagTrash,
+    kBarButtonItemTagDone
+};
+
+
 @class CanvasViewController;
-@interface CoordinatingController : NSObject
+
+@interface CoordinatingController : UIViewController
 + (CoordinatingController *)sharedCoordinatingController;
-- (CanvasViewController *)canvasViewController;
+- (IBAction)requestViewChangedWithObject:(NSObject *)sender;
+
+@property (strong, nonatomic) CanvasViewController *canvasViewController;
+@property (strong, nonatomic) UIViewController *activeViewController;
 @end

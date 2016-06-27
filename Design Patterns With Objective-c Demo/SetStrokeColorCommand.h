@@ -10,20 +10,8 @@
 #import <UIKit/UIColor.h>
 #import "Command.h"
 
-@protocol SetStrokeColorCommandDelegate;
 typedef void (^RGBValuesProvider)(CGFloat *red, CGFloat *green, CGFloat *blue);
 
 @interface SetStrokeColorCommand : Command
-@property (nonatomic, weak  ) id<SetStrokeColorCommandDelegate> delegate;
 @property (nonatomic, copy  ) RGBValuesProvider rgbValuesProvider;
-@end
-
-
-
-
-
-@protocol SetStrokeColorCommandDelegate <NSObject>
-@required
-- (void)command:(SetStrokeColorCommand *)command didRequestColorComponentrsForRed:(CGFloat *)red green:(CGFloat *)green blue:(CGFloat *)blue;
-- (void)command:(SetStrokeColorCommand *)command didFinishColorUpdateWithColor:(UIColor *)color;
 @end

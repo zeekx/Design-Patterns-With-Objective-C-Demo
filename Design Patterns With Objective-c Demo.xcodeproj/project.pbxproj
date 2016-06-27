@@ -33,6 +33,13 @@
 		A505C7C81D1A33720063588A /* TouchConsoleController.m in Sources */ = {isa = PBXBuildFile; fileRef = A505C7C71D1A33720063588A /* TouchConsoleController.m */; };
 		A505C7CF1D1A33C10063588A /* GameGearEmulator.m in Sources */ = {isa = PBXBuildFile; fileRef = A505C7CE1D1A33C10063588A /* GameGearEmulator.m */; };
 		A505C7D21D1A33DA0063588A /* GameBoyEmulator.m in Sources */ = {isa = PBXBuildFile; fileRef = A505C7D11D1A33DA0063588A /* GameBoyEmulator.m */; };
+		A505C8791D1B7F070063588A /* ScirbbleMananger.m in Sources */ = {isa = PBXBuildFile; fileRef = A505C8781D1B7F070063588A /* ScirbbleMananger.m */; };
+		A505C87C1D1B7F450063588A /* ScribbleThumbnail.m in Sources */ = {isa = PBXBuildFile; fileRef = A505C87B1D1B7F450063588A /* ScribbleThumbnail.m */; };
+		A505C87F1D1B7F540063588A /* ScribbleThumbnailProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = A505C87E1D1B7F540063588A /* ScribbleThumbnailProxy.m */; };
+		A505C8821D1B7F930063588A /* Scribble.m in Sources */ = {isa = PBXBuildFile; fileRef = A505C8811D1B7F930063588A /* Scribble.m */; };
+		A505C8851D1B83C60063588A /* ScribbleMemento.m in Sources */ = {isa = PBXBuildFile; fileRef = A505C8841D1B83C60063588A /* ScribbleMemento.m */; };
+		A505C8891D1BD20C0063588A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A505C8881D1BD20C0063588A /* UIKit.framework */; };
+		A505C88C1D1BD5AA0063588A /* ThumbnailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A505C88B1D1BD5AA0063588A /* ThumbnailViewController.m */; };
 		A541E6D01CE0962B00C6BF92 /* Vertex.m in Sources */ = {isa = PBXBuildFile; fileRef = A541E6CF1CE0962B00C6BF92 /* Vertex.m */; };
 		A541E6D31CE16F6C00C6BF92 /* Dot.m in Sources */ = {isa = PBXBuildFile; fileRef = A541E6D21CE16F6C00C6BF92 /* Dot.m */; };
 		A541E6D61CE1752400C6BF92 /* Stroke.m in Sources */ = {isa = PBXBuildFile; fileRef = A541E6D51CE1752400C6BF92 /* Stroke.m */; };
@@ -100,6 +107,19 @@
 		A505C7CE1D1A33C10063588A /* GameGearEmulator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GameGearEmulator.m; sourceTree = "<group>"; };
 		A505C7D01D1A33DA0063588A /* GameBoyEmulator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameBoyEmulator.h; sourceTree = "<group>"; };
 		A505C7D11D1A33DA0063588A /* GameBoyEmulator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GameBoyEmulator.m; sourceTree = "<group>"; };
+		A505C8771D1B7F070063588A /* ScirbbleMananger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScirbbleMananger.h; sourceTree = "<group>"; };
+		A505C8781D1B7F070063588A /* ScirbbleMananger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScirbbleMananger.m; sourceTree = "<group>"; };
+		A505C87A1D1B7F450063588A /* ScribbleThumbnail.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScribbleThumbnail.h; sourceTree = "<group>"; };
+		A505C87B1D1B7F450063588A /* ScribbleThumbnail.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScribbleThumbnail.m; sourceTree = "<group>"; };
+		A505C87D1D1B7F540063588A /* ScribbleThumbnailProxy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScribbleThumbnailProxy.h; sourceTree = "<group>"; };
+		A505C87E1D1B7F540063588A /* ScribbleThumbnailProxy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScribbleThumbnailProxy.m; sourceTree = "<group>"; };
+		A505C8801D1B7F930063588A /* Scribble.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Scribble.h; sourceTree = "<group>"; };
+		A505C8811D1B7F930063588A /* Scribble.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Scribble.m; sourceTree = "<group>"; };
+		A505C8831D1B83C60063588A /* ScribbleMemento.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScribbleMemento.h; sourceTree = "<group>"; };
+		A505C8841D1B83C60063588A /* ScribbleMemento.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScribbleMemento.m; sourceTree = "<group>"; };
+		A505C8881D1BD20C0063588A /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		A505C88A1D1BD5AA0063588A /* ThumbnailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ThumbnailViewController.h; sourceTree = "<group>"; };
+		A505C88B1D1BD5AA0063588A /* ThumbnailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ThumbnailViewController.m; sourceTree = "<group>"; };
 		A53F750C1CDC92F20020467C /* Mark.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Mark.h; sourceTree = "<group>"; };
 		A541E6CE1CE0962B00C6BF92 /* Vertex.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Vertex.h; sourceTree = "<group>"; };
 		A541E6CF1CE0962B00C6BF92 /* Vertex.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Vertex.m; sourceTree = "<group>"; };
@@ -152,6 +172,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A505C8891D1BD20C0063588A /* UIKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -179,7 +200,8 @@
 				A505C7811D17F6970063588A /* Info.plist */,
 				A505C7701D17F6970063588A /* Supporting Files */,
 			);
-			path = Chapter06;
+			name = Chapter06;
+			path = ../Chapter06;
 			sourceTree = "<group>";
 		};
 		A505C7701D17F6970063588A /* Supporting Files */ = {
@@ -193,6 +215,8 @@
 		A505C7971D191A4B0063588A /* Command */ = {
 			isa = PBXGroup;
 			children = (
+				A505C7991D191AC60063588A /* SetStrokeColorCommand.h */,
+				A505C79A1D191AC60063588A /* SetStrokeColorCommand.m */,
 				A505C7941D1919CF0063588A /* Command.h */,
 				A505C7951D1919CF0063588A /* Command.m */,
 			);
@@ -275,6 +299,14 @@
 				A541E6D21CE16F6C00C6BF92 /* Dot.m */,
 				A541E6CE1CE0962B00C6BF92 /* Vertex.h */,
 				A541E6CF1CE0962B00C6BF92 /* Vertex.m */,
+				A505C87A1D1B7F450063588A /* ScribbleThumbnail.h */,
+				A505C87B1D1B7F450063588A /* ScribbleThumbnail.m */,
+				A505C87D1D1B7F540063588A /* ScribbleThumbnailProxy.h */,
+				A505C87E1D1B7F540063588A /* ScribbleThumbnailProxy.m */,
+				A505C8801D1B7F930063588A /* Scribble.h */,
+				A505C8811D1B7F930063588A /* Scribble.m */,
+				A505C8831D1B83C60063588A /* ScribbleMemento.h */,
+				A505C8841D1B83C60063588A /* ScribbleMemento.m */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -290,6 +322,9 @@
 				A505C79D1D191DB20063588A /* CoordinatingController.m */,
 				A505C7A21D193CB80063588A /* PaletteViewController.h */,
 				A505C7A31D193CB80063588A /* PaletteViewController.m */,
+				A505C76F1D17F6970063588A /* Chapter06 */,
+				A505C88A1D1BD5AA0063588A /* ThumbnailViewController.h */,
+				A505C88B1D1BD5AA0063588A /* ThumbnailViewController.m */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -311,7 +346,6 @@
 			isa = PBXGroup;
 			children = (
 				A5F45D4E1CA50F130060ED01 /* Design Patterns With Objective-c Demo */,
-				A505C76F1D17F6970063588A /* Chapter06 */,
 				A505C7AA1D1A33290063588A /* Chapter09 */,
 				A5F45D4D1CA50F130060ED01 /* Products */,
 			);
@@ -341,8 +375,8 @@
 				A5F45D4F1CA50F130060ED01 /* Supporting Files */,
 				A5BFED281CE468780000ED7A /* Factory */,
 				A505C7971D191A4B0063588A /* Command */,
-				A505C7991D191AC60063588A /* SetStrokeColorCommand.h */,
-				A505C79A1D191AC60063588A /* SetStrokeColorCommand.m */,
+				A505C8771D1B7F070063588A /* ScirbbleMananger.h */,
+				A505C8781D1B7F070063588A /* ScirbbleMananger.m */,
 			);
 			path = "Design Patterns With Objective-c Demo";
 			sourceTree = "<group>";
@@ -350,6 +384,7 @@
 		A5F45D4F1CA50F130060ED01 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				A505C8881D1BD20C0063588A /* UIKit.framework */,
 				A5F45D501CA50F130060ED01 /* main.m */,
 			);
 			name = "Supporting Files";
@@ -517,9 +552,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A505C87C1D1B7F450063588A /* ScribbleThumbnail.m in Sources */,
 				A5BFED271CE468720000ED7A /* CanvasViewGenerator.m in Sources */,
 				A5BFED2E1CE468AD0000ED7A /* ClothCanvasViewGenerator.m in Sources */,
+				A505C8821D1B7F930063588A /* Scribble.m in Sources */,
 				A5F45D571CA50F130060ED01 /* ViewController.m in Sources */,
+				A505C8791D1B7F070063588A /* ScirbbleMananger.m in Sources */,
 				A505C7961D1919CF0063588A /* Command.m in Sources */,
 				A5BFED311CE46E350000ED7A /* CanvasViewController.m in Sources */,
 				A541E6D01CE0962B00C6BF92 /* Vertex.m in Sources */,
@@ -529,6 +567,9 @@
 				A5F45D541CA50F130060ED01 /* AppDelegate.m in Sources */,
 				A505C79B1D191AC60063588A /* SetStrokeColorCommand.m in Sources */,
 				A5BFED211CE4672E0000ED7A /* PaperCanvasView.m in Sources */,
+				A505C88C1D1BD5AA0063588A /* ThumbnailViewController.m in Sources */,
+				A505C8851D1B83C60063588A /* ScribbleMemento.m in Sources */,
+				A505C87F1D1B7F540063588A /* ScribbleThumbnailProxy.m in Sources */,
 				A505C7A41D193CB80063588A /* PaletteViewController.m in Sources */,
 				A541E6D31CE16F6C00C6BF92 /* Dot.m in Sources */,
 				A5BFED1B1CE466BC0000ED7A /* CanvasView.m in Sources */,
@@ -777,6 +818,7 @@
 				A505C7BF1D1A33290063588A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A5F45D471CA50F130060ED01 /* Build configuration list for PBXProject "Design Patterns With Objective-c Demo" */ = {
 			isa = XCConfigurationList;
