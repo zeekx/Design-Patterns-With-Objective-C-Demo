@@ -7,7 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "Mark.h"
 
 @interface CanvasView : UIView
-
+@property (strong, nonatomic) id<Mark> mark;
 @end

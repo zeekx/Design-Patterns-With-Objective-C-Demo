@@ -43,4 +43,9 @@ static NSString *const kMark = @"mark";
         [self didChangeValueForKey:kMark];
     }
 }
+
+- (NSString *)description {
+    NSMutableString *mutableString = [NSMutableString stringWithString:[self.mark description]];
+    return mutableString;
+}
 @end

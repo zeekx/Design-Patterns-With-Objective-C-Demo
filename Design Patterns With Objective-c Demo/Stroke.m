@@ -19,39 +19,40 @@
 }
 
 - (CGPoint)location {
-    return _children.firstObject.location;
+    return self.children.firstObject.location;
 }
 
 - (void)addMark:(id<Mark>)mark {
-    [_children addObject:mark];
+    [self.children addObject:mark];
 }
 
 - (void)removeMark:(id<Mark>)mark {
-    if ([_children containsObject:mark]) {
-        [_children removeObject:mark];
+    if ([self.children containsObject:mark]) {
+        [self.children removeObject:mark];
     } else {
-        [_children makeObjectsPerformSelector:@selector(removeMark:) withObject:mark];
+        [self.children makeObjectsPerformSelector:@selector(removeMark:) withObject:mark];
     }
 }
 
 - (id<Mark>)childMarkAtIndex:(NSUInteger)index {
     id<Mark> child = nil;
-    if (index < _children.count) {
-        child = _children[index];
+    if (index < self.children.count) {
+        child = self.children[index];
     }
     return child;
 }
 
 - (id<Mark>)lastChild {
-    return _children.lastObject;
+    return self.children.lastObject;
 }
 
 - (NSUInteger)count {
-    return _children.count;
+    return self.children.count;
 }
 
 
 - (void)drawWithContext:(CGContextRef)context {
+    assert([NSThread isMainThread]);
     CGContextMoveToPoint(context, self.location.x, self.location.y);
     for (id<Mark> mark in self.children) {
         [mark drawWithContext:context];
@@ -61,14 +62,40 @@
     CGContextSetStrokeColorWithColor(context, self.color.CGColor);
     CGContextStrokePath(context);
 }
+
+- (NSString *)description {
+    NSMutableString *mutableString = [NSMutableString stringWithString:[super description]];
+    [mutableString appendFormat:@"size:%@\n",NSStringFromCGSize(self.size)];
+    [mutableString appendFormat:@"color:%@\n",self.color];
+    return mutableString;
+}
+
 //1
 //4
 #pragma mark - Copying
-- (id)copyWithZone:(NSZone *)zone {
+- (instancetype)copyWithZone:(NSZone *)zone {
     Stroke *copy = [[[self class] allocWithZone:zone] init];
     copy.color = self.color.copy;
     copy.size = self.size;
     copy.children = self.children.copy;
     return copy;
+}
+
+
+
+#pragma mark - Enumerator
+- (NSEnumerator *)enumerator {
+    return [[MarkEnumerator alloc] initWithMark:self];
+}
+
+- (void)enumerateMarksUsingBlock:(void(^)(id<Mark> item, BOOL *stop))block {
+    BOOL stop = NO;
+    NSEnumerator *enumerator = [self enumerator];
+    for (id<Mark> mark in enumerator) {
+        block(mark, &stop);
+        if (stop) {
+            break;
+        }
+    }
 }
 @end

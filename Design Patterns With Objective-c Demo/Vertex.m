@@ -20,14 +20,12 @@
 
 
 - (void)addMark:(id<Mark>)mark {
-    assert(NO);
 }
 - (void)removeMark:(id<Mark>)mark {
-    assert(NO);
 }
 
 - (id<Mark>)childMarkAtIndex:(NSUInteger)index {
-    assert(NO);
+    return nil;
 }
 
 - (void)drawWithContext:(CGContextRef)context {
@@ -39,4 +37,9 @@
     return [[[self class] allocWithZone:zone] initWithLocation:self.location];
 }
 
+- (NSString *)description {
+    NSMutableString *mutableString = [NSMutableString stringWithString:[super description]];
+    [mutableString appendFormat:@"location:%@\n",NSStringFromCGPoint(self.location)];
+    return mutableString;
+}
 @end

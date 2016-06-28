@@ -44,7 +44,7 @@
 - (void)setScribble:(Scribble *)scribble {
     if (_scribble != scribble) {
         _scribble = scribble;
-        //TODO:使用  [self addObserver:self forKeyPath:@"scrbble.mark" options:Initial | New context:NULL]代替
+        //TODO:Use [self addObserver:self forKeyPath:@"scrbble.mark" options:Initial | New context:NULL] to instead it.
         [_scribble addObserver:self
                     forKeyPath:@"mark"
                        options:NSKeyValueObservingOptionNew | NSKeyValueObservingOptionInitial
@@ -54,6 +54,15 @@
 
 - (void)dealloc {
     [self.scribble removeObserver:self forKeyPath:@"mark" context:NULL];
+}
+
+- (void)observeValueForKeyPath:(NSString *)keyPath ofObject:(id)object change:(NSDictionary<NSString *,id> *)change context:(void *)context {
+    if ([object isKindOfClass:Scribble.class]
+        && [keyPath isEqualToString:@"mark"]) {
+        id<Mark> mark = change[NSKeyValueChangeNewKey];
+        [self.canvasView setMark:mark];
+        [self.canvasView setNeedsDisplay];
+    }
 }
 
 #pragma mark - Touchs
@@ -86,6 +95,5 @@
         
     }
     self.startPoint = CGPointZero;
-    dis
 }
 @end

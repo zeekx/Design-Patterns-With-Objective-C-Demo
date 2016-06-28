@@ -10,5 +10,6 @@
 #import "Mark.h"
 
 @interface Stroke : NSObject <Mark, NSCopying>
-
+@property (assign, nonatomic) CGSize size;
+@property (strong, nonatomic) UIColor *color;
 @end

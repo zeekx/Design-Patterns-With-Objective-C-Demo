@@ -9,7 +9,7 @@
 #import "Dot.h"
 @interface Dot () {
     UIColor *_color;
-    CGSize *size;
+    CGSize _size;
 }
 @end
 
@@ -30,4 +30,10 @@
     CGContextFillEllipseInRect(context, CGRectMake(self.location.x, self.location.y, self.size.width, self.size.height));
 }
 
+- (NSString *)description {
+    NSMutableString *mutableString = [NSMutableString stringWithString:[super description]];
+    [mutableString appendFormat:@"size:%@\n",NSStringFromCGSize(self.size)];
+    [mutableString appendFormat:@"color:%@\n",self.color];
+    return mutableString;
+}
 @end

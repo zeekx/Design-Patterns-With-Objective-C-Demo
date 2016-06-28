@@ -9,8 +9,10 @@
 #import "Mark.h"
 
 @interface Vertex : NSObject <Mark,  NSCopying>
-
 @property (nonatomic, assign) CGPoint location;
+@property (nonatomic, strong) UIColor *color;
+@property (nonatomic, assign) CGSize size;
+
 @property (nonatomic, readonly) NSUInteger count;
 @property (nonatomic, readonly) id <Mark> lastChild;
 

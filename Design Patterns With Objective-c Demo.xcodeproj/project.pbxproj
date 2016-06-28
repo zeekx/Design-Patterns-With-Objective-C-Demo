@@ -40,6 +40,8 @@
 		A505C8851D1B83C60063588A /* ScribbleMemento.m in Sources */ = {isa = PBXBuildFile; fileRef = A505C8841D1B83C60063588A /* ScribbleMemento.m */; };
 		A505C8891D1BD20C0063588A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A505C8881D1BD20C0063588A /* UIKit.framework */; };
 		A505C88C1D1BD5AA0063588A /* ThumbnailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A505C88B1D1BD5AA0063588A /* ThumbnailViewController.m */; };
+		A505C8921D2257DF0063588A /* NSMutableArray+Stack.m in Sources */ = {isa = PBXBuildFile; fileRef = A505C8911D2257DF0063588A /* NSMutableArray+Stack.m */; };
+		A505C8961D2259590063588A /* MarkEnumerator.m in Sources */ = {isa = PBXBuildFile; fileRef = A505C8951D2259590063588A /* MarkEnumerator.m */; };
 		A541E6D01CE0962B00C6BF92 /* Vertex.m in Sources */ = {isa = PBXBuildFile; fileRef = A541E6CF1CE0962B00C6BF92 /* Vertex.m */; };
 		A541E6D31CE16F6C00C6BF92 /* Dot.m in Sources */ = {isa = PBXBuildFile; fileRef = A541E6D21CE16F6C00C6BF92 /* Dot.m */; };
 		A541E6D61CE1752400C6BF92 /* Stroke.m in Sources */ = {isa = PBXBuildFile; fileRef = A541E6D51CE1752400C6BF92 /* Stroke.m */; };
@@ -120,6 +122,10 @@
 		A505C8881D1BD20C0063588A /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		A505C88A1D1BD5AA0063588A /* ThumbnailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ThumbnailViewController.h; sourceTree = "<group>"; };
 		A505C88B1D1BD5AA0063588A /* ThumbnailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ThumbnailViewController.m; sourceTree = "<group>"; };
+		A505C8901D2257DF0063588A /* NSMutableArray+Stack.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSMutableArray+Stack.h"; sourceTree = "<group>"; };
+		A505C8911D2257DF0063588A /* NSMutableArray+Stack.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSMutableArray+Stack.m"; sourceTree = "<group>"; };
+		A505C8941D2259590063588A /* MarkEnumerator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MarkEnumerator.h; sourceTree = "<group>"; };
+		A505C8951D2259590063588A /* MarkEnumerator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MarkEnumerator.m; sourceTree = "<group>"; };
 		A53F750C1CDC92F20020467C /* Mark.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Mark.h; sourceTree = "<group>"; };
 		A541E6CE1CE0962B00C6BF92 /* Vertex.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Vertex.h; sourceTree = "<group>"; };
 		A541E6CF1CE0962B00C6BF92 /* Vertex.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Vertex.m; sourceTree = "<group>"; };
@@ -273,6 +279,15 @@
 			name = Emulator;
 			sourceTree = "<group>";
 		};
+		A505C8931D2257EC0063588A /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				A505C8901D2257DF0063588A /* NSMutableArray+Stack.h */,
+				A505C8911D2257DF0063588A /* NSMutableArray+Stack.m */,
+			);
+			name = Category;
+			sourceTree = "<group>";
+		};
 		A5BFED1C1CE466C60000ED7A /* View */ = {
 			isa = PBXGroup;
 			children = (
@@ -364,6 +379,7 @@
 		A5F45D4E1CA50F130060ED01 /* Design Patterns With Objective-c Demo */ = {
 			isa = PBXGroup;
 			children = (
+				A505C8931D2257EC0063588A /* Category */,
 				A5BFED1D1CE466CC0000ED7A /* Model */,
 				A5BFED1C1CE466C60000ED7A /* View */,
 				A5BFED1E1CE466DA0000ED7A /* Controller */,
@@ -377,6 +393,8 @@
 				A505C7971D191A4B0063588A /* Command */,
 				A505C8771D1B7F070063588A /* ScirbbleMananger.h */,
 				A505C8781D1B7F070063588A /* ScirbbleMananger.m */,
+				A505C8941D2259590063588A /* MarkEnumerator.h */,
+				A505C8951D2259590063588A /* MarkEnumerator.m */,
 			);
 			path = "Design Patterns With Objective-c Demo";
 			sourceTree = "<group>";
@@ -558,6 +576,7 @@
 				A505C8821D1B7F930063588A /* Scribble.m in Sources */,
 				A5F45D571CA50F130060ED01 /* ViewController.m in Sources */,
 				A505C8791D1B7F070063588A /* ScirbbleMananger.m in Sources */,
+				A505C8921D2257DF0063588A /* NSMutableArray+Stack.m in Sources */,
 				A505C7961D1919CF0063588A /* Command.m in Sources */,
 				A5BFED311CE46E350000ED7A /* CanvasViewController.m in Sources */,
 				A541E6D01CE0962B00C6BF92 /* Vertex.m in Sources */,
@@ -575,6 +594,7 @@
 				A5BFED1B1CE466BC0000ED7A /* CanvasView.m in Sources */,
 				A5F45D511CA50F130060ED01 /* main.m in Sources */,
 				A505C7A11D1937DC0063588A /* CommandSlider.m in Sources */,
+				A505C8961D2259590063588A /* MarkEnumerator.m in Sources */,
 				A541E6D61CE1752400C6BF92 /* Stroke.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
