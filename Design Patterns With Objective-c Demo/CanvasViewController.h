@@ -15,5 +15,5 @@
 @interface CanvasViewController : UIViewController
 @property (strong, nonatomic) UIColor *strokeColor;
 @property (strong, nonatomic) Scribble *scribble;
-@property (assign, nonatomic) CGSize  strokeSize;
+@property (assign, nonatomic) CGFloat  strokeSize;
 @end

@@ -10,5 +10,7 @@
 
 @interface Dot : Vertex <Mark, NSCopying>
 @property (nonatomic, strong) UIColor *color;
-@property (nonatomic, assign) CGSize size;
+@property (nonatomic, assign) CGFloat size;
+
+- (void)accecptMarkVisitor:(id<MarkVisitor>)visitor;
 @end

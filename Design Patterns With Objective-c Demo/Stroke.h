@@ -10,6 +10,8 @@
 #import "Mark.h"
 
 @interface Stroke : NSObject <Mark, NSCopying>
-@property (assign, nonatomic) CGSize size;
+@property (assign, nonatomic) CGFloat size;
 @property (strong, nonatomic) UIColor *color;
+
+- (void)enumerateMarksUsingBlock:(void(^)(id<Mark> item, BOOL *stop))block;
 @end

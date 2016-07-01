@@ -9,5 +9,9 @@
 #import "CanvasView.h"
 
 @implementation CanvasView
-
+- (void)drawRect:(CGRect)rect {
+    CGContextRef context = UIGraphicsGetCurrentContext();
+    MarkRenderer *markRenderer = [[MarkRenderer alloc] initWithContext:context];
+    [self.mark accecptMarkVisitor:markRenderer];
+}
 @end

@@ -14,6 +14,7 @@
 @end
 
 @implementation Stroke
+
 - (void)setLocation:(CGPoint)location {
     //Do nothing.
 }
@@ -57,7 +58,7 @@
     for (id<Mark> mark in self.children) {
         [mark drawWithContext:context];
     }
-    CGContextSetLineWidth(context, self.size.width);
+    CGContextSetLineWidth(context, self.size);
     CGContextSetLineCap(context, kCGLineCapRound);
     CGContextSetStrokeColorWithColor(context, self.color.CGColor);
     CGContextStrokePath(context);
@@ -65,8 +66,9 @@
 
 - (NSString *)description {
     NSMutableString *mutableString = [NSMutableString stringWithString:[super description]];
-    [mutableString appendFormat:@"size:%@\n",NSStringFromCGSize(self.size)];
+    [mutableString appendFormat:@"size:%f\n", self.size];
     [mutableString appendFormat:@"color:%@\n",self.color];
+    [mutableString appendFormat:@"children:%@",self.children];
     return mutableString;
 }
 
@@ -97,5 +99,30 @@
             break;
         }
     }
+}
+
+- (void)accecptMarkVisitor:(id<MarkVisitor>)visitor {
+    for (id<Mark> dot in self.children) {
+        [dot accecptMarkVisitor:visitor];
+    }
+    [visitor visitStroke:self];
+}
+#pragma mark - Lazy property
+- (UIColor *)color {
+    if (_color == nil) {
+        return [UIColor blueColor];
+    }
+    return _color;
+}
+
+- (CGFloat)size {
+    return 3;
+}
+
+- (NSMutableArray<id<Mark>> *)children {
+    if (_children == nil) {
+        _children = [NSMutableArray array];
+    }
+    return _children;
 }
 @end

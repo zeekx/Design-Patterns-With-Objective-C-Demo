@@ -42,4 +42,8 @@
     [mutableString appendFormat:@"location:%@\n",NSStringFromCGPoint(self.location)];
     return mutableString;
 }
+
+- (void)accecptMarkVisitor:(id<MarkVisitor>)visitor {
+    [visitor visitVertex:self];
+}
 @end

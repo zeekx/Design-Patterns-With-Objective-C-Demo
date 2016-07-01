@@ -9,7 +9,7 @@
 #import "Dot.h"
 @interface Dot () {
     UIColor *_color;
-    CGSize _size;
+    CGFloat _size;
 }
 @end
 
@@ -27,13 +27,17 @@
 
 - (void)drawWithContext:(CGContextRef)context {
     CGContextSetFillColorWithColor(context, self.color.CGColor);
-    CGContextFillEllipseInRect(context, CGRectMake(self.location.x, self.location.y, self.size.width, self.size.height));
+    CGContextFillEllipseInRect(context, CGRectMake(self.location.x, self.location.y, self.size, self.size));
 }
 
 - (NSString *)description {
     NSMutableString *mutableString = [NSMutableString stringWithString:[super description]];
-    [mutableString appendFormat:@"size:%@\n",NSStringFromCGSize(self.size)];
+    [mutableString appendFormat:@"size:%f\n", self.size];
     [mutableString appendFormat:@"color:%@\n",self.color];
     return mutableString;
+}
+
+- (void)accecptMarkVisitor:(id<MarkVisitor>)visitor {
+    [visitor visitDot:self];
 }
 @end

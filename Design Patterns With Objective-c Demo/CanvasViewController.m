@@ -28,8 +28,20 @@
     self.scribble = [[Scribble alloc] init];
     
     [self loadCanvasViewWithGenerator:[[CanvasViewGenerator alloc] init]];
+    [self test];
 }
-
+- (void)test {
+    Stroke *stroke = [[Stroke alloc] init];
+    [stroke addMark:[[Dot alloc] initWithLocation:CGPointMake(0, 0)]];
+    [stroke addMark:[[Dot alloc] initWithLocation:CGPointMake(1, 0)]];
+    [stroke addMark:[[Dot alloc] initWithLocation:CGPointMake(2, 0)]];
+    [stroke addMark:[[Dot alloc] initWithLocation:CGPointMake(3, 0)]];
+    [stroke addMark:[[Dot alloc] initWithLocation:CGPointMake(4, 0)]];
+    
+    [stroke enumerateMarksUsingBlock:^(id<Mark> item, BOOL *stop) {
+        NSLog(@"item:%@",item);
+    }];
+}
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.

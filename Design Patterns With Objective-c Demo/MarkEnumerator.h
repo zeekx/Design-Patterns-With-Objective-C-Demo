@@ -7,7 +7,8 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "Mark.h"
+
+@protocol Mark;
 
 @interface MarkEnumerator : NSEnumerator
 - (instancetype)initWithMark:(id<Mark>)mark;

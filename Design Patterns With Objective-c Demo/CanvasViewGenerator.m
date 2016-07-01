@@ -8,9 +8,11 @@
 
 #import "CanvasViewGenerator.h"
 #import "CanvasView.h"
+#import "ClothCanvasView.h"
+
 
 @implementation CanvasViewGenerator
 - (CanvasView *)canvasViewWithFrame:(CGRect)frame {
-    return [[CanvasView alloc] initWithFrame:frame];
+    return [[ClothCanvasView alloc] initWithFrame:frame];
 }
 @end

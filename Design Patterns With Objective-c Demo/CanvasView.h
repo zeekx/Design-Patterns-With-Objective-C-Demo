@@ -8,6 +8,7 @@
 
 #import <UIKit/UIKit.h>
 #import "Mark.h"
+#import "MarkRenderer.h"
 
 @interface CanvasView : UIView
 @property (strong, nonatomic) id<Mark> mark;

@@ -7,10 +7,14 @@
 //
 
 #import <Foundation/Foundation.h>
-#import <UIKit/UIKit.h>
+#import <UIKit/UIColor.h>
+#import <UIKit/UIGeometry.h>
+#import <CoreGraphics/CGGeometry.h>
 #import "MarkEnumerator.h"
+#import "MarkVisitor.h"
 
 @protocol Mark <NSObject>
+
 @optional
 - (NSEnumerator *)enumerator;
 
@@ -19,12 +23,12 @@
 @property (nonatomic, readonly) NSUInteger count;
 @property (nonatomic, readonly) id <Mark> lastChild;
 @property (nonatomic, strong) UIColor *color;
-@property (nonatomic, assign) CGSize size;
+@property (nonatomic, assign) CGFloat size;
 
 - (id)copy;
 - (void)addMark:(id<Mark>)mark;
 - (void)removeMark:(id<Mark>)mark;
 - (id<Mark>)childMarkAtIndex:(NSUInteger)index;
 - (void)drawWithContext:(CGContextRef)context;
-
+- (void)accecptMarkVisitor:(id<MarkVisitor>)visitor;
 @end

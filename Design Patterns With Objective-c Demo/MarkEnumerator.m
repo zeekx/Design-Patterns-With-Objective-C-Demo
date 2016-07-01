@@ -8,6 +8,7 @@
 
 #import "MarkEnumerator.h"
 #import "NSMutableArray+Stack.h"
+#import "Mark.h"
 
 @interface MarkEnumerator ()
 @property (strong, nonatomic) NSMutableArray *stack;
@@ -17,7 +18,8 @@
 - (instancetype)initWithMark:(id<Mark>)mark {
     self = [super init];
     if (self) {
-        
+        self.stack = [NSMutableArray arrayWithCapacity:[mark count]];
+        [self traverAndBuildStackMark:mark];
     }
     return self;
 }
