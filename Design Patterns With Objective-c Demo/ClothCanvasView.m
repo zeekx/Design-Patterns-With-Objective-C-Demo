@@ -12,9 +12,32 @@
 - (instancetype)initWithFrame:(CGRect)frame {
     self = [super initWithFrame:frame];
     if (self) {
-        [self addSubview:[[UIImageView alloc] initWithImage:[UIImage imageNamed:@"cloth"]]];
+        [self setup];
     }
     return self;
 }
 
+- (void)setup {
+    UIImage *image = [UIImage imageNamed:@"cloth"];
+    UIImageView *imageView = [[UIImageView alloc] initWithImage:image];
+    imageView.contentMode = UIViewContentModeScaleAspectFill;
+    [self addSubview:imageView];
+    imageView.translatesAutoresizingMaskIntoConstraints = NO;
+    NSDictionary *viewBindings = NSDictionaryOfVariableBindings(imageView);
+    [self addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"H:|[imageView]|"
+                                                                options:kNilOptions
+                                                                metrics:nil
+                                                                   views:viewBindings]];
+    
+    [self addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"V:|[imageView]|"
+                                                                 options:kNilOptions
+                                                                 metrics:nil
+                                                                   views:viewBindings]];
+}
+
+- (void)drawRect:(CGRect)rect {
+    CGContextRef context = UIGraphicsGetCurrentContext();
+    MarkRenderer *markRenderer = [[MarkRenderer alloc] initWithContext:context];
+    [self.mark accecptMarkVisitor:markRenderer];
+}
 @end

@@ -9,6 +9,25 @@
 #import "CanvasView.h"
 
 @implementation CanvasView
+- (instancetype)initWithCoder:(NSCoder *)aDecoder {
+    self = [super initWithCoder:aDecoder];
+    if (self) {
+        [self setup];
+    }
+    return self;
+}
+- (instancetype)initWithFrame:(CGRect)frame {
+    self = [super initWithFrame:frame];
+    if (self) {
+        [self setup];
+    }
+    return self;
+}
+
+- (void)setup {
+    self.backgroundColor = [UIColor whiteColor];
+}
+
 - (void)drawRect:(CGRect)rect {
     CGContextRef context = UIGraphicsGetCurrentContext();
     MarkRenderer *markRenderer = [[MarkRenderer alloc] initWithContext:context];

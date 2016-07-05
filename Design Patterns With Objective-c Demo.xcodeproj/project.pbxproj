@@ -42,6 +42,27 @@
 		A505C88C1D1BD5AA0063588A /* ThumbnailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A505C88B1D1BD5AA0063588A /* ThumbnailViewController.m */; };
 		A505C8921D2257DF0063588A /* NSMutableArray+Stack.m in Sources */ = {isa = PBXBuildFile; fileRef = A505C8911D2257DF0063588A /* NSMutableArray+Stack.m */; };
 		A505C8961D2259590063588A /* MarkEnumerator.m in Sources */ = {isa = PBXBuildFile; fileRef = A505C8951D2259590063588A /* MarkEnumerator.m */; };
+		A529FD981D2A583B00C230AA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A529FD971D2A583B00C230AA /* main.m */; };
+		A529FD9B1D2A583B00C230AA /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A529FD9A1D2A583B00C230AA /* AppDelegate.m */; };
+		A529FD9E1D2A583B00C230AA /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A529FD9D1D2A583B00C230AA /* ViewController.m */; };
+		A529FDA11D2A583B00C230AA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A529FD9F1D2A583B00C230AA /* Main.storyboard */; };
+		A529FDA31D2A583B00C230AA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A529FDA21D2A583B00C230AA /* Assets.xcassets */; };
+		A529FDA61D2A583B00C230AA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A529FDA41D2A583B00C230AA /* LaunchScreen.storyboard */; };
+		A529FDAE1D2A59D900C230AA /* UIImage+Component.m in Sources */ = {isa = PBXBuildFile; fileRef = A529FDAD1D2A59D900C230AA /* UIImage+Component.m */; };
+		A529FDB11D2A5A2D00C230AA /* ImageFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = A529FDB01D2A5A2D00C230AA /* ImageFilter.m */; };
+		A529FDB41D2A5DA900C230AA /* ImageTransformFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = A529FDB31D2A5DA900C230AA /* ImageTransformFilter.m */; };
+		A529FDB71D2A5EA800C230AA /* DecoratorView.m in Sources */ = {isa = PBXBuildFile; fileRef = A529FDB61D2A5EA800C230AA /* DecoratorView.m */; };
+		A529FDBA1D2A662100C230AA /* ImageShadowFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = A529FDB91D2A662100C230AA /* ImageShadowFilter.m */; };
+		A529FDC31D2B4ABA00C230AA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A529FDC21D2B4ABA00C230AA /* main.m */; };
+		A529FDC61D2B4ABA00C230AA /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A529FDC51D2B4ABA00C230AA /* AppDelegate.m */; };
+		A529FDC91D2B4ABA00C230AA /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A529FDC81D2B4ABA00C230AA /* ViewController.m */; };
+		A529FDCC1D2B4ABA00C230AA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A529FDCA1D2B4ABA00C230AA /* Main.storyboard */; };
+		A529FDCE1D2B4ABA00C230AA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A529FDCD1D2B4ABA00C230AA /* Assets.xcassets */; };
+		A529FDD11D2B4ABA00C230AA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A529FDCF1D2B4ABA00C230AA /* LaunchScreen.storyboard */; };
+		A529FDD81D2B4AE000C230AA /* UIImage+Filter.m in Sources */ = {isa = PBXBuildFile; fileRef = A529FDD71D2B4AE000C230AA /* UIImage+Filter.m */; };
+		A529FDDB1D2B4C8900C230AA /* UIImage+Transform.m in Sources */ = {isa = PBXBuildFile; fileRef = A529FDDA1D2B4C8900C230AA /* UIImage+Transform.m */; };
+		A529FDDE1D2B4D8800C230AA /* UIImage+Shadow.m in Sources */ = {isa = PBXBuildFile; fileRef = A529FDDD1D2B4D8800C230AA /* UIImage+Shadow.m */; };
+		A529FDE11D2B65A700C230AA /* DecoratorView.m in Sources */ = {isa = PBXBuildFile; fileRef = A529FDE01D2B65A700C230AA /* DecoratorView.m */; };
 		A5407E471D261ADD00F58AE2 /* MarkRenderer.m in Sources */ = {isa = PBXBuildFile; fileRef = A5407E461D261ADD00F58AE2 /* MarkRenderer.m */; };
 		A5407E491D261C4000F58AE2 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A5407E481D261C4000F58AE2 /* CoreGraphics.framework */; };
 		A541E6D01CE0962B00C6BF92 /* Vertex.m in Sources */ = {isa = PBXBuildFile; fileRef = A541E6CF1CE0962B00C6BF92 /* Vertex.m */; };
@@ -128,6 +149,45 @@
 		A505C8911D2257DF0063588A /* NSMutableArray+Stack.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSMutableArray+Stack.m"; sourceTree = "<group>"; };
 		A505C8941D2259590063588A /* MarkEnumerator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MarkEnumerator.h; sourceTree = "<group>"; };
 		A505C8951D2259590063588A /* MarkEnumerator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MarkEnumerator.m; sourceTree = "<group>"; };
+		A529FD941D2A583B00C230AA /* Chapter16-Decorator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Chapter16-Decorator.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A529FD971D2A583B00C230AA /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		A529FD991D2A583B00C230AA /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		A529FD9A1D2A583B00C230AA /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		A529FD9C1D2A583B00C230AA /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		A529FD9D1D2A583B00C230AA /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		A529FDA01D2A583B00C230AA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		A529FDA21D2A583B00C230AA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A529FDA51D2A583B00C230AA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		A529FDA71D2A583B00C230AA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A529FDAB1D2A587300C230AA /* ImageComponent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageComponent.h; sourceTree = "<group>"; };
+		A529FDAC1D2A59D900C230AA /* UIImage+Component.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Component.h"; sourceTree = "<group>"; };
+		A529FDAD1D2A59D900C230AA /* UIImage+Component.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Component.m"; sourceTree = "<group>"; };
+		A529FDAF1D2A5A2D00C230AA /* ImageFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageFilter.h; sourceTree = "<group>"; };
+		A529FDB01D2A5A2D00C230AA /* ImageFilter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImageFilter.m; sourceTree = "<group>"; };
+		A529FDB21D2A5DA900C230AA /* ImageTransformFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageTransformFilter.h; sourceTree = "<group>"; };
+		A529FDB31D2A5DA900C230AA /* ImageTransformFilter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImageTransformFilter.m; sourceTree = "<group>"; };
+		A529FDB51D2A5EA800C230AA /* DecoratorView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DecoratorView.h; sourceTree = "<group>"; };
+		A529FDB61D2A5EA800C230AA /* DecoratorView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DecoratorView.m; sourceTree = "<group>"; };
+		A529FDB81D2A662100C230AA /* ImageShadowFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageShadowFilter.h; sourceTree = "<group>"; };
+		A529FDB91D2A662100C230AA /* ImageShadowFilter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImageShadowFilter.m; sourceTree = "<group>"; };
+		A529FDBF1D2B4ABA00C230AA /* Chapter16-Decorator with category.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Chapter16-Decorator with category.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A529FDC21D2B4ABA00C230AA /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		A529FDC41D2B4ABA00C230AA /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		A529FDC51D2B4ABA00C230AA /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		A529FDC71D2B4ABA00C230AA /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		A529FDC81D2B4ABA00C230AA /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		A529FDCB1D2B4ABA00C230AA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		A529FDCD1D2B4ABA00C230AA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A529FDD01D2B4ABA00C230AA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		A529FDD21D2B4ABA00C230AA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A529FDD61D2B4AE000C230AA /* UIImage+Filter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Filter.h"; sourceTree = "<group>"; };
+		A529FDD71D2B4AE000C230AA /* UIImage+Filter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Filter.m"; sourceTree = "<group>"; };
+		A529FDD91D2B4C8900C230AA /* UIImage+Transform.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Transform.h"; sourceTree = "<group>"; };
+		A529FDDA1D2B4C8900C230AA /* UIImage+Transform.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Transform.m"; sourceTree = "<group>"; };
+		A529FDDC1D2B4D8800C230AA /* UIImage+Shadow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Shadow.h"; sourceTree = "<group>"; };
+		A529FDDD1D2B4D8800C230AA /* UIImage+Shadow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Shadow.m"; sourceTree = "<group>"; };
+		A529FDDF1D2B65A700C230AA /* DecoratorView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DecoratorView.h; sourceTree = "<group>"; };
+		A529FDE01D2B65A700C230AA /* DecoratorView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DecoratorView.m; sourceTree = "<group>"; };
 		A53F750C1CDC92F20020467C /* Mark.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Mark.h; sourceTree = "<group>"; };
 		A5407E431D261AB700F58AE2 /* MarkVisitor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MarkVisitor.h; sourceTree = "<group>"; };
 		A5407E451D261ADD00F58AE2 /* MarkRenderer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MarkRenderer.h; sourceTree = "<group>"; };
@@ -180,6 +240,20 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		A529FD911D2A583B00C230AA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A529FDBC1D2B4ABA00C230AA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		A5F45D491CA50F130060ED01 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -213,8 +287,7 @@
 				A505C7811D17F6970063588A /* Info.plist */,
 				A505C7701D17F6970063588A /* Supporting Files */,
 			);
-			name = Chapter06;
-			path = ../Chapter06;
+			path = Chapter06;
 			sourceTree = "<group>";
 		};
 		A505C7701D17F6970063588A /* Supporting Files */ = {
@@ -304,6 +377,73 @@
 			name = Iteraotr;
 			sourceTree = "<group>";
 		};
+		A529FD951D2A583B00C230AA /* Chapter16-Decorator */ = {
+			isa = PBXGroup;
+			children = (
+				A529FD991D2A583B00C230AA /* AppDelegate.h */,
+				A529FD9A1D2A583B00C230AA /* AppDelegate.m */,
+				A529FD9C1D2A583B00C230AA /* ViewController.h */,
+				A529FD9D1D2A583B00C230AA /* ViewController.m */,
+				A529FD9F1D2A583B00C230AA /* Main.storyboard */,
+				A529FDAF1D2A5A2D00C230AA /* ImageFilter.h */,
+				A529FDB01D2A5A2D00C230AA /* ImageFilter.m */,
+				A529FDAB1D2A587300C230AA /* ImageComponent.h */,
+				A529FDAC1D2A59D900C230AA /* UIImage+Component.h */,
+				A529FDAD1D2A59D900C230AA /* UIImage+Component.m */,
+				A529FDB21D2A5DA900C230AA /* ImageTransformFilter.h */,
+				A529FDB31D2A5DA900C230AA /* ImageTransformFilter.m */,
+				A529FDB81D2A662100C230AA /* ImageShadowFilter.h */,
+				A529FDB91D2A662100C230AA /* ImageShadowFilter.m */,
+				A529FDB51D2A5EA800C230AA /* DecoratorView.h */,
+				A529FDB61D2A5EA800C230AA /* DecoratorView.m */,
+				A529FDA21D2A583B00C230AA /* Assets.xcassets */,
+				A529FDA41D2A583B00C230AA /* LaunchScreen.storyboard */,
+				A529FDA71D2A583B00C230AA /* Info.plist */,
+				A529FD961D2A583B00C230AA /* Supporting Files */,
+			);
+			path = "Chapter16-Decorator";
+			sourceTree = "<group>";
+		};
+		A529FD961D2A583B00C230AA /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				A529FD971D2A583B00C230AA /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		A529FDC01D2B4ABA00C230AA /* Chapter16-Decorator with category */ = {
+			isa = PBXGroup;
+			children = (
+				A529FDC41D2B4ABA00C230AA /* AppDelegate.h */,
+				A529FDDF1D2B65A700C230AA /* DecoratorView.h */,
+				A529FDE01D2B65A700C230AA /* DecoratorView.m */,
+				A529FDC51D2B4ABA00C230AA /* AppDelegate.m */,
+				A529FDC71D2B4ABA00C230AA /* ViewController.h */,
+				A529FDC81D2B4ABA00C230AA /* ViewController.m */,
+				A529FDD61D2B4AE000C230AA /* UIImage+Filter.h */,
+				A529FDD71D2B4AE000C230AA /* UIImage+Filter.m */,
+				A529FDD91D2B4C8900C230AA /* UIImage+Transform.h */,
+				A529FDDA1D2B4C8900C230AA /* UIImage+Transform.m */,
+				A529FDDC1D2B4D8800C230AA /* UIImage+Shadow.h */,
+				A529FDDD1D2B4D8800C230AA /* UIImage+Shadow.m */,
+				A529FDCA1D2B4ABA00C230AA /* Main.storyboard */,
+				A529FDCD1D2B4ABA00C230AA /* Assets.xcassets */,
+				A529FDCF1D2B4ABA00C230AA /* LaunchScreen.storyboard */,
+				A529FDD21D2B4ABA00C230AA /* Info.plist */,
+				A529FDC11D2B4ABA00C230AA /* Supporting Files */,
+			);
+			path = "Chapter16-Decorator with category";
+			sourceTree = "<group>";
+		};
+		A529FDC11D2B4ABA00C230AA /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				A529FDC21D2B4ABA00C230AA /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
 		A5407E441D261ABB00F58AE2 /* Visitor */ = {
 			isa = PBXGroup;
 			children = (
@@ -363,7 +503,6 @@
 				A505C79D1D191DB20063588A /* CoordinatingController.m */,
 				A505C7A21D193CB80063588A /* PaletteViewController.h */,
 				A505C7A31D193CB80063588A /* PaletteViewController.m */,
-				A505C76F1D17F6970063588A /* Chapter06 */,
 				A505C88A1D1BD5AA0063588A /* ThumbnailViewController.h */,
 				A505C88B1D1BD5AA0063588A /* ThumbnailViewController.m */,
 			);
@@ -386,9 +525,11 @@
 		A5F45D431CA50F130060ED01 = {
 			isa = PBXGroup;
 			children = (
-				A5407E481D261C4000F58AE2 /* CoreGraphics.framework */,
 				A5F45D4E1CA50F130060ED01 /* Design Patterns With Objective-c Demo */,
+				A505C76F1D17F6970063588A /* Chapter06 */,
 				A505C7AA1D1A33290063588A /* Chapter09 */,
+				A529FD951D2A583B00C230AA /* Chapter16-Decorator */,
+				A529FDC01D2B4ABA00C230AA /* Chapter16-Decorator with category */,
 				A5F45D4D1CA50F130060ED01 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -399,6 +540,8 @@
 				A5F45D4C1CA50F130060ED01 /* Design Patterns With Objective-c Demo.app */,
 				A505C76E1D17F6970063588A /* Chapter06.app */,
 				A505C7A91D1A33290063588A /* Chapter09.app */,
+				A529FD941D2A583B00C230AA /* Chapter16-Decorator.app */,
+				A529FDBF1D2B4ABA00C230AA /* Chapter16-Decorator with category.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -429,6 +572,7 @@
 		A5F45D4F1CA50F130060ED01 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				A5407E481D261C4000F58AE2 /* CoreGraphics.framework */,
 				A505C8881D1BD20C0063588A /* UIKit.framework */,
 				A5F45D501CA50F130060ED01 /* main.m */,
 			);
@@ -472,6 +616,40 @@
 			productReference = A505C7A91D1A33290063588A /* Chapter09.app */;
 			productType = "com.apple.product-type.application";
 		};
+		A529FD931D2A583B00C230AA /* Chapter16-Decorator */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A529FDA81D2A583B00C230AA /* Build configuration list for PBXNativeTarget "Chapter16-Decorator" */;
+			buildPhases = (
+				A529FD901D2A583B00C230AA /* Sources */,
+				A529FD911D2A583B00C230AA /* Frameworks */,
+				A529FD921D2A583B00C230AA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Chapter16-Decorator";
+			productName = "Chapter16-Decorator";
+			productReference = A529FD941D2A583B00C230AA /* Chapter16-Decorator.app */;
+			productType = "com.apple.product-type.application";
+		};
+		A529FDBE1D2B4ABA00C230AA /* Chapter16-Decorator with category */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A529FDD31D2B4ABA00C230AA /* Build configuration list for PBXNativeTarget "Chapter16-Decorator with category" */;
+			buildPhases = (
+				A529FDBB1D2B4ABA00C230AA /* Sources */,
+				A529FDBC1D2B4ABA00C230AA /* Frameworks */,
+				A529FDBD1D2B4ABA00C230AA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Chapter16-Decorator with category";
+			productName = "Chapter16-Decorator with category";
+			productReference = A529FDBF1D2B4ABA00C230AA /* Chapter16-Decorator with category.app */;
+			productType = "com.apple.product-type.application";
+		};
 		A5F45D4B1CA50F130060ED01 /* Design Patterns With Objective-c Demo */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = A5F45D631CA50F130060ED01 /* Build configuration list for PBXNativeTarget "Design Patterns With Objective-c Demo" */;
@@ -504,6 +682,12 @@
 					A505C7A81D1A33290063588A = {
 						CreatedOnToolsVersion = 7.3.1;
 					};
+					A529FD931D2A583B00C230AA = {
+						CreatedOnToolsVersion = 7.3.1;
+					};
+					A529FDBE1D2B4ABA00C230AA = {
+						CreatedOnToolsVersion = 7.3.1;
+					};
 					A5F45D4B1CA50F130060ED01 = {
 						CreatedOnToolsVersion = 7.2.1;
 						DevelopmentTeam = X669CU522Z;
@@ -526,6 +710,8 @@
 				A5F45D4B1CA50F130060ED01 /* Design Patterns With Objective-c Demo */,
 				A505C76D1D17F6970063588A /* Chapter06 */,
 				A505C7A81D1A33290063588A /* Chapter09 */,
+				A529FD931D2A583B00C230AA /* Chapter16-Decorator */,
+				A529FDBE1D2B4ABA00C230AA /* Chapter16-Decorator with category */,
 			);
 		};
 /* End PBXProject section */
@@ -548,6 +734,26 @@
 				A505C7BB1D1A33290063588A /* LaunchScreen.storyboard in Resources */,
 				A505C7B81D1A33290063588A /* Assets.xcassets in Resources */,
 				A505C7B61D1A33290063588A /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A529FD921D2A583B00C230AA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A529FDA61D2A583B00C230AA /* LaunchScreen.storyboard in Resources */,
+				A529FDA31D2A583B00C230AA /* Assets.xcassets in Resources */,
+				A529FDA11D2A583B00C230AA /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A529FDBD1D2B4ABA00C230AA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A529FDD11D2B4ABA00C230AA /* LaunchScreen.storyboard in Resources */,
+				A529FDCE1D2B4ABA00C230AA /* Assets.xcassets in Resources */,
+				A529FDCC1D2B4ABA00C230AA /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -590,6 +796,35 @@
 				A505C7B01D1A33290063588A /* AppDelegate.m in Sources */,
 				A505C7AD1D1A33290063588A /* main.m in Sources */,
 				A505C7CF1D1A33C10063588A /* GameGearEmulator.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A529FD901D2A583B00C230AA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A529FDB41D2A5DA900C230AA /* ImageTransformFilter.m in Sources */,
+				A529FD9E1D2A583B00C230AA /* ViewController.m in Sources */,
+				A529FDAE1D2A59D900C230AA /* UIImage+Component.m in Sources */,
+				A529FDB11D2A5A2D00C230AA /* ImageFilter.m in Sources */,
+				A529FDB71D2A5EA800C230AA /* DecoratorView.m in Sources */,
+				A529FDBA1D2A662100C230AA /* ImageShadowFilter.m in Sources */,
+				A529FD9B1D2A583B00C230AA /* AppDelegate.m in Sources */,
+				A529FD981D2A583B00C230AA /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A529FDBB1D2B4ABA00C230AA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A529FDC91D2B4ABA00C230AA /* ViewController.m in Sources */,
+				A529FDD81D2B4AE000C230AA /* UIImage+Filter.m in Sources */,
+				A529FDDB1D2B4C8900C230AA /* UIImage+Transform.m in Sources */,
+				A529FDC61D2B4ABA00C230AA /* AppDelegate.m in Sources */,
+				A529FDE11D2B65A700C230AA /* DecoratorView.m in Sources */,
+				A529FDC31D2B4ABA00C230AA /* main.m in Sources */,
+				A529FDDE1D2B4D8800C230AA /* UIImage+Shadow.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -658,6 +893,38 @@
 			isa = PBXVariantGroup;
 			children = (
 				A505C7BA1D1A33290063588A /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		A529FD9F1D2A583B00C230AA /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A529FDA01D2A583B00C230AA /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		A529FDA41D2A583B00C230AA /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A529FDA51D2A583B00C230AA /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		A529FDCA1D2B4ABA00C230AA /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A529FDCB1D2B4ABA00C230AA /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		A529FDCF1D2B4ABA00C230AA /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A529FDD01D2B4ABA00C230AA /* Base */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -733,6 +1000,58 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.kingsoft.zeek.Chapter09;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		A529FDA91D2A583B00C230AA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ANALYZER_NONNULL = YES;
+				INFOPLIST_FILE = "Chapter16-Decorator/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.kingsoft.zeek.Chapter16-Decorator";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		A529FDAA1D2A583B00C230AA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ANALYZER_NONNULL = YES;
+				INFOPLIST_FILE = "Chapter16-Decorator/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.kingsoft.zeek.Chapter16-Decorator";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		A529FDD41D2B4ABA00C230AA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ANALYZER_NONNULL = YES;
+				INFOPLIST_FILE = "Chapter16-Decorator with category/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.kingsoft.zeek.Chapter16-Decorator-with-category";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		A529FDD51D2B4ABA00C230AA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ANALYZER_NONNULL = YES;
+				INFOPLIST_FILE = "Chapter16-Decorator with category/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.kingsoft.zeek.Chapter16-Decorator-with-category";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
@@ -867,6 +1186,22 @@
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
+		};
+		A529FDA81D2A583B00C230AA /* Build configuration list for PBXNativeTarget "Chapter16-Decorator" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A529FDA91D2A583B00C230AA /* Debug */,
+				A529FDAA1D2A583B00C230AA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		A529FDD31D2B4ABA00C230AA /* Build configuration list for PBXNativeTarget "Chapter16-Decorator with category" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A529FDD41D2B4ABA00C230AA /* Debug */,
+				A529FDD51D2B4ABA00C230AA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
 		};
 		A5F45D471CA50F130060ED01 /* Build configuration list for PBXProject "Design Patterns With Objective-c Demo" */ = {
 			isa = XCConfigurationList;

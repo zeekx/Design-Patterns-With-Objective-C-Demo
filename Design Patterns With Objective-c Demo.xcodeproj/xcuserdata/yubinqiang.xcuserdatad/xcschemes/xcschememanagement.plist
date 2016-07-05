@@ -14,6 +14,16 @@
 			<key>orderHint</key>
 			<integer>2</integer>
 		</dict>
+		<key>Chapter16-Decorator with category.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>4</integer>
+		</dict>
+		<key>Chapter16-Decorator.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>3</integer>
+		</dict>
 		<key>Design Patterns With Objective-c Demo.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
@@ -28,6 +38,16 @@
 			<true/>
 		</dict>
 		<key>A505C7A81D1A33290063588A</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>A529FD931D2A583B00C230AA</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>A529FDBE1D2B4ABA00C230AA</key>
 		<dict>
 			<key>primary</key>
 			<true/>

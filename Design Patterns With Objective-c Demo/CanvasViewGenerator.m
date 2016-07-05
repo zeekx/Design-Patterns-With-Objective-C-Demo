@@ -13,6 +13,6 @@
 
 @implementation CanvasViewGenerator
 - (CanvasView *)canvasViewWithFrame:(CGRect)frame {
-    return [[ClothCanvasView alloc] initWithFrame:frame];
+    return [[CanvasView alloc] initWithFrame:frame];
 }
 @end
