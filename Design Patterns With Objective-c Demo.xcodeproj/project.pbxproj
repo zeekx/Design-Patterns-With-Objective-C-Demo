@@ -63,6 +63,20 @@
 		A529FDDB1D2B4C8900C230AA /* UIImage+Transform.m in Sources */ = {isa = PBXBuildFile; fileRef = A529FDDA1D2B4C8900C230AA /* UIImage+Transform.m */; };
 		A529FDDE1D2B4D8800C230AA /* UIImage+Shadow.m in Sources */ = {isa = PBXBuildFile; fileRef = A529FDDD1D2B4D8800C230AA /* UIImage+Shadow.m */; };
 		A529FDE11D2B65A700C230AA /* DecoratorView.m in Sources */ = {isa = PBXBuildFile; fileRef = A529FDE01D2B65A700C230AA /* DecoratorView.m */; };
+		A529FDEA1D2BA50E00C230AA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A529FDE91D2BA50E00C230AA /* main.m */; };
+		A529FDED1D2BA50E00C230AA /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A529FDEC1D2BA50E00C230AA /* AppDelegate.m */; };
+		A529FDF01D2BA50E00C230AA /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A529FDEF1D2BA50E00C230AA /* ViewController.m */; };
+		A529FDF31D2BA50E00C230AA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A529FDF11D2BA50E00C230AA /* Main.storyboard */; };
+		A529FDF51D2BA50E00C230AA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A529FDF41D2BA50E00C230AA /* Assets.xcassets */; };
+		A529FDF81D2BA50E00C230AA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A529FDF61D2BA50E00C230AA /* LaunchScreen.storyboard */; };
+		A529FDFF1D2BA56E00C230AA /* Attack.m in Sources */ = {isa = PBXBuildFile; fileRef = A529FDFE1D2BA56E00C230AA /* Attack.m */; };
+		A529FE021D2BA58700C230AA /* AttackHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = A529FE011D2BA58700C230AA /* AttackHandler.m */; };
+		A529FE051D2BA68100C230AA /* MetalArmor.m in Sources */ = {isa = PBXBuildFile; fileRef = A529FE041D2BA68100C230AA /* MetalArmor.m */; };
+		A529FE081D2BA7BC00C230AA /* CrystalShield.m in Sources */ = {isa = PBXBuildFile; fileRef = A529FE071D2BA7BC00C230AA /* CrystalShield.m */; };
+		A529FE0B1D2BA80000C230AA /* SwordAttack.m in Sources */ = {isa = PBXBuildFile; fileRef = A529FE0A1D2BA80000C230AA /* SwordAttack.m */; };
+		A529FE0E1D2BA81A00C230AA /* MagicFireAttack.m in Sources */ = {isa = PBXBuildFile; fileRef = A529FE0D1D2BA81A00C230AA /* MagicFireAttack.m */; };
+		A529FE121D2BA83D00C230AA /* LightningAttack.m in Sources */ = {isa = PBXBuildFile; fileRef = A529FE111D2BA83D00C230AA /* LightningAttack.m */; };
+		A529FE161D2BA93100C230AA /* Avatar.m in Sources */ = {isa = PBXBuildFile; fileRef = A529FE151D2BA93100C230AA /* Avatar.m */; };
 		A5407E471D261ADD00F58AE2 /* MarkRenderer.m in Sources */ = {isa = PBXBuildFile; fileRef = A5407E461D261ADD00F58AE2 /* MarkRenderer.m */; };
 		A5407E491D261C4000F58AE2 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A5407E481D261C4000F58AE2 /* CoreGraphics.framework */; };
 		A541E6D01CE0962B00C6BF92 /* Vertex.m in Sources */ = {isa = PBXBuildFile; fileRef = A541E6CF1CE0962B00C6BF92 /* Vertex.m */; };
@@ -188,6 +202,32 @@
 		A529FDDD1D2B4D8800C230AA /* UIImage+Shadow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Shadow.m"; sourceTree = "<group>"; };
 		A529FDDF1D2B65A700C230AA /* DecoratorView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DecoratorView.h; sourceTree = "<group>"; };
 		A529FDE01D2B65A700C230AA /* DecoratorView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DecoratorView.m; sourceTree = "<group>"; };
+		A529FDE61D2BA50E00C230AA /* Chapter17-Chain of Responsibility.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Chapter17-Chain of Responsibility.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A529FDE91D2BA50E00C230AA /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		A529FDEB1D2BA50E00C230AA /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		A529FDEC1D2BA50E00C230AA /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		A529FDEE1D2BA50E00C230AA /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		A529FDEF1D2BA50E00C230AA /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		A529FDF21D2BA50E00C230AA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		A529FDF41D2BA50E00C230AA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A529FDF71D2BA50E00C230AA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		A529FDF91D2BA50E00C230AA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A529FDFD1D2BA56E00C230AA /* Attack.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Attack.h; sourceTree = "<group>"; };
+		A529FDFE1D2BA56E00C230AA /* Attack.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Attack.m; sourceTree = "<group>"; };
+		A529FE001D2BA58700C230AA /* AttackHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AttackHandler.h; sourceTree = "<group>"; };
+		A529FE011D2BA58700C230AA /* AttackHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AttackHandler.m; sourceTree = "<group>"; };
+		A529FE031D2BA68100C230AA /* MetalArmor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MetalArmor.h; sourceTree = "<group>"; };
+		A529FE041D2BA68100C230AA /* MetalArmor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MetalArmor.m; sourceTree = "<group>"; };
+		A529FE061D2BA7BC00C230AA /* CrystalShield.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CrystalShield.h; sourceTree = "<group>"; };
+		A529FE071D2BA7BC00C230AA /* CrystalShield.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CrystalShield.m; sourceTree = "<group>"; };
+		A529FE091D2BA80000C230AA /* SwordAttack.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SwordAttack.h; sourceTree = "<group>"; };
+		A529FE0A1D2BA80000C230AA /* SwordAttack.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SwordAttack.m; sourceTree = "<group>"; };
+		A529FE0C1D2BA81A00C230AA /* MagicFireAttack.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MagicFireAttack.h; sourceTree = "<group>"; };
+		A529FE0D1D2BA81A00C230AA /* MagicFireAttack.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MagicFireAttack.m; sourceTree = "<group>"; };
+		A529FE101D2BA83D00C230AA /* LightningAttack.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LightningAttack.h; sourceTree = "<group>"; };
+		A529FE111D2BA83D00C230AA /* LightningAttack.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LightningAttack.m; sourceTree = "<group>"; };
+		A529FE141D2BA93100C230AA /* Avatar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Avatar.h; sourceTree = "<group>"; };
+		A529FE151D2BA93100C230AA /* Avatar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Avatar.m; sourceTree = "<group>"; };
 		A53F750C1CDC92F20020467C /* Mark.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Mark.h; sourceTree = "<group>"; };
 		A5407E431D261AB700F58AE2 /* MarkVisitor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MarkVisitor.h; sourceTree = "<group>"; };
 		A5407E451D261ADD00F58AE2 /* MarkRenderer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MarkRenderer.h; sourceTree = "<group>"; };
@@ -248,6 +288,13 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		A529FDBC1D2B4ABA00C230AA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A529FDE31D2BA50E00C230AA /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -444,6 +491,62 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		A529FDE71D2BA50E00C230AA /* Chapter17-Chain of Responsibility */ = {
+			isa = PBXGroup;
+			children = (
+				A529FDEB1D2BA50E00C230AA /* AppDelegate.h */,
+				A529FDEC1D2BA50E00C230AA /* AppDelegate.m */,
+				A529FDEE1D2BA50E00C230AA /* ViewController.h */,
+				A529FDEF1D2BA50E00C230AA /* ViewController.m */,
+				A529FE0F1D2BA82700C230AA /* Attack */,
+				A529FE131D2BA84D00C230AA /* Attack Handler */,
+				A529FDF11D2BA50E00C230AA /* Main.storyboard */,
+				A529FDF41D2BA50E00C230AA /* Assets.xcassets */,
+				A529FDF61D2BA50E00C230AA /* LaunchScreen.storyboard */,
+				A529FDF91D2BA50E00C230AA /* Info.plist */,
+				A529FDE81D2BA50E00C230AA /* Supporting Files */,
+			);
+			path = "Chapter17-Chain of Responsibility";
+			sourceTree = "<group>";
+		};
+		A529FDE81D2BA50E00C230AA /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				A529FDE91D2BA50E00C230AA /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		A529FE0F1D2BA82700C230AA /* Attack */ = {
+			isa = PBXGroup;
+			children = (
+				A529FE091D2BA80000C230AA /* SwordAttack.h */,
+				A529FE0A1D2BA80000C230AA /* SwordAttack.m */,
+				A529FE0C1D2BA81A00C230AA /* MagicFireAttack.h */,
+				A529FE0D1D2BA81A00C230AA /* MagicFireAttack.m */,
+				A529FDFD1D2BA56E00C230AA /* Attack.h */,
+				A529FDFE1D2BA56E00C230AA /* Attack.m */,
+				A529FE101D2BA83D00C230AA /* LightningAttack.h */,
+				A529FE111D2BA83D00C230AA /* LightningAttack.m */,
+			);
+			name = Attack;
+			sourceTree = "<group>";
+		};
+		A529FE131D2BA84D00C230AA /* Attack Handler */ = {
+			isa = PBXGroup;
+			children = (
+				A529FE001D2BA58700C230AA /* AttackHandler.h */,
+				A529FE011D2BA58700C230AA /* AttackHandler.m */,
+				A529FE061D2BA7BC00C230AA /* CrystalShield.h */,
+				A529FE071D2BA7BC00C230AA /* CrystalShield.m */,
+				A529FE031D2BA68100C230AA /* MetalArmor.h */,
+				A529FE041D2BA68100C230AA /* MetalArmor.m */,
+				A529FE141D2BA93100C230AA /* Avatar.h */,
+				A529FE151D2BA93100C230AA /* Avatar.m */,
+			);
+			name = "Attack Handler";
+			sourceTree = "<group>";
+		};
 		A5407E441D261ABB00F58AE2 /* Visitor */ = {
 			isa = PBXGroup;
 			children = (
@@ -530,6 +633,7 @@
 				A505C7AA1D1A33290063588A /* Chapter09 */,
 				A529FD951D2A583B00C230AA /* Chapter16-Decorator */,
 				A529FDC01D2B4ABA00C230AA /* Chapter16-Decorator with category */,
+				A529FDE71D2BA50E00C230AA /* Chapter17-Chain of Responsibility */,
 				A5F45D4D1CA50F130060ED01 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -542,6 +646,7 @@
 				A505C7A91D1A33290063588A /* Chapter09.app */,
 				A529FD941D2A583B00C230AA /* Chapter16-Decorator.app */,
 				A529FDBF1D2B4ABA00C230AA /* Chapter16-Decorator with category.app */,
+				A529FDE61D2BA50E00C230AA /* Chapter17-Chain of Responsibility.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -650,6 +755,23 @@
 			productReference = A529FDBF1D2B4ABA00C230AA /* Chapter16-Decorator with category.app */;
 			productType = "com.apple.product-type.application";
 		};
+		A529FDE51D2BA50E00C230AA /* Chapter17-Chain of Responsibility */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A529FDFA1D2BA50E00C230AA /* Build configuration list for PBXNativeTarget "Chapter17-Chain of Responsibility" */;
+			buildPhases = (
+				A529FDE21D2BA50E00C230AA /* Sources */,
+				A529FDE31D2BA50E00C230AA /* Frameworks */,
+				A529FDE41D2BA50E00C230AA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Chapter17-Chain of Responsibility";
+			productName = "Chapter17-Chain of Responsibility";
+			productReference = A529FDE61D2BA50E00C230AA /* Chapter17-Chain of Responsibility.app */;
+			productType = "com.apple.product-type.application";
+		};
 		A5F45D4B1CA50F130060ED01 /* Design Patterns With Objective-c Demo */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = A5F45D631CA50F130060ED01 /* Build configuration list for PBXNativeTarget "Design Patterns With Objective-c Demo" */;
@@ -688,6 +810,9 @@
 					A529FDBE1D2B4ABA00C230AA = {
 						CreatedOnToolsVersion = 7.3.1;
 					};
+					A529FDE51D2BA50E00C230AA = {
+						CreatedOnToolsVersion = 7.3.1;
+					};
 					A5F45D4B1CA50F130060ED01 = {
 						CreatedOnToolsVersion = 7.2.1;
 						DevelopmentTeam = X669CU522Z;
@@ -712,6 +837,7 @@
 				A505C7A81D1A33290063588A /* Chapter09 */,
 				A529FD931D2A583B00C230AA /* Chapter16-Decorator */,
 				A529FDBE1D2B4ABA00C230AA /* Chapter16-Decorator with category */,
+				A529FDE51D2BA50E00C230AA /* Chapter17-Chain of Responsibility */,
 			);
 		};
 /* End PBXProject section */
@@ -754,6 +880,16 @@
 				A529FDD11D2B4ABA00C230AA /* LaunchScreen.storyboard in Resources */,
 				A529FDCE1D2B4ABA00C230AA /* Assets.xcassets in Resources */,
 				A529FDCC1D2B4ABA00C230AA /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A529FDE41D2BA50E00C230AA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A529FDF81D2BA50E00C230AA /* LaunchScreen.storyboard in Resources */,
+				A529FDF51D2BA50E00C230AA /* Assets.xcassets in Resources */,
+				A529FDF31D2BA50E00C230AA /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -825,6 +961,24 @@
 				A529FDE11D2B65A700C230AA /* DecoratorView.m in Sources */,
 				A529FDC31D2B4ABA00C230AA /* main.m in Sources */,
 				A529FDDE1D2B4D8800C230AA /* UIImage+Shadow.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A529FDE21D2BA50E00C230AA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A529FDF01D2BA50E00C230AA /* ViewController.m in Sources */,
+				A529FE051D2BA68100C230AA /* MetalArmor.m in Sources */,
+				A529FE161D2BA93100C230AA /* Avatar.m in Sources */,
+				A529FE121D2BA83D00C230AA /* LightningAttack.m in Sources */,
+				A529FDED1D2BA50E00C230AA /* AppDelegate.m in Sources */,
+				A529FE021D2BA58700C230AA /* AttackHandler.m in Sources */,
+				A529FE081D2BA7BC00C230AA /* CrystalShield.m in Sources */,
+				A529FE0E1D2BA81A00C230AA /* MagicFireAttack.m in Sources */,
+				A529FDEA1D2BA50E00C230AA /* main.m in Sources */,
+				A529FDFF1D2BA56E00C230AA /* Attack.m in Sources */,
+				A529FE0B1D2BA80000C230AA /* SwordAttack.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -925,6 +1079,22 @@
 			isa = PBXVariantGroup;
 			children = (
 				A529FDD01D2B4ABA00C230AA /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		A529FDF11D2BA50E00C230AA /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A529FDF21D2BA50E00C230AA /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		A529FDF61D2BA50E00C230AA /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A529FDF71D2BA50E00C230AA /* Base */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -1052,6 +1222,32 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.kingsoft.zeek.Chapter16-Decorator-with-category";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		A529FDFB1D2BA50E00C230AA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ANALYZER_NONNULL = YES;
+				INFOPLIST_FILE = "Chapter17-Chain of Responsibility/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.kingsoft.zeek.Chapter17-Chain-of-Responsibility";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		A529FDFC1D2BA50E00C230AA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ANALYZER_NONNULL = YES;
+				INFOPLIST_FILE = "Chapter17-Chain of Responsibility/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.kingsoft.zeek.Chapter17-Chain-of-Responsibility";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
@@ -1200,6 +1396,14 @@
 			buildConfigurations = (
 				A529FDD41D2B4ABA00C230AA /* Debug */,
 				A529FDD51D2B4ABA00C230AA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		A529FDFA1D2BA50E00C230AA /* Build configuration list for PBXNativeTarget "Chapter17-Chain of Responsibility" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A529FDFB1D2BA50E00C230AA /* Debug */,
+				A529FDFC1D2BA50E00C230AA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};
