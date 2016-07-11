@@ -89,6 +89,15 @@
 		A5BFED2B1CE4689C0000ED7A /* PaperCanvasViewGenerator.m in Sources */ = {isa = PBXBuildFile; fileRef = A5BFED2A1CE4689C0000ED7A /* PaperCanvasViewGenerator.m */; };
 		A5BFED2E1CE468AD0000ED7A /* ClothCanvasViewGenerator.m in Sources */ = {isa = PBXBuildFile; fileRef = A5BFED2D1CE468AC0000ED7A /* ClothCanvasViewGenerator.m */; };
 		A5BFED311CE46E350000ED7A /* CanvasViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A5BFED301CE46E350000ED7A /* CanvasViewController.m */; };
+		A5E108B21D33441E00BAC167 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A5E108B11D33441E00BAC167 /* main.m */; };
+		A5E108B51D33441E00BAC167 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A5E108B41D33441E00BAC167 /* AppDelegate.m */; };
+		A5E108B81D33441E00BAC167 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A5E108B71D33441E00BAC167 /* ViewController.m */; };
+		A5E108BB1D33441E00BAC167 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A5E108B91D33441E00BAC167 /* Main.storyboard */; };
+		A5E108BD1D33441E00BAC167 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A5E108BC1D33441E00BAC167 /* Assets.xcassets */; };
+		A5E108C01D33441E00BAC167 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A5E108BE1D33441E00BAC167 /* LaunchScreen.storyboard */; };
+		A5E108C71D33444B00BAC167 /* Sandwich.m in Sources */ = {isa = PBXBuildFile; fileRef = A5E108C61D33444B00BAC167 /* Sandwich.m */; };
+		A5E108CA1D33451700BAC167 /* RubenSandwich.m in Sources */ = {isa = PBXBuildFile; fileRef = A5E108C91D33451700BAC167 /* RubenSandwich.m */; };
+		A5E108CD1D334C6200BAC167 /* Hamburger.m in Sources */ = {isa = PBXBuildFile; fileRef = A5E108CC1D334C6200BAC167 /* Hamburger.m */; };
 		A5F45D511CA50F130060ED01 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A5F45D501CA50F130060ED01 /* main.m */; };
 		A5F45D541CA50F130060ED01 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A5F45D531CA50F130060ED01 /* AppDelegate.m */; };
 		A5F45D571CA50F130060ED01 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A5F45D561CA50F130060ED01 /* ViewController.m */; };
@@ -253,6 +262,22 @@
 		A5BFED2D1CE468AC0000ED7A /* ClothCanvasViewGenerator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ClothCanvasViewGenerator.m; sourceTree = "<group>"; };
 		A5BFED2F1CE46E350000ED7A /* CanvasViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CanvasViewController.h; sourceTree = "<group>"; };
 		A5BFED301CE46E350000ED7A /* CanvasViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CanvasViewController.m; sourceTree = "<group>"; };
+		A5E108AE1D33441E00BAC167 /* Chpater18-Template.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Chpater18-Template.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A5E108B11D33441E00BAC167 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		A5E108B31D33441E00BAC167 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		A5E108B41D33441E00BAC167 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		A5E108B61D33441E00BAC167 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		A5E108B71D33441E00BAC167 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		A5E108BA1D33441E00BAC167 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		A5E108BC1D33441E00BAC167 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A5E108BF1D33441E00BAC167 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		A5E108C11D33441E00BAC167 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A5E108C51D33444B00BAC167 /* Sandwich.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Sandwich.h; sourceTree = "<group>"; };
+		A5E108C61D33444B00BAC167 /* Sandwich.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Sandwich.m; sourceTree = "<group>"; };
+		A5E108C81D33451700BAC167 /* RubenSandwich.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RubenSandwich.h; sourceTree = "<group>"; };
+		A5E108C91D33451700BAC167 /* RubenSandwich.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RubenSandwich.m; sourceTree = "<group>"; };
+		A5E108CB1D334C6200BAC167 /* Hamburger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Hamburger.h; sourceTree = "<group>"; };
+		A5E108CC1D334C6200BAC167 /* Hamburger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Hamburger.m; sourceTree = "<group>"; };
 		A5F45D4C1CA50F130060ED01 /* Design Patterns With Objective-c Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Design Patterns With Objective-c Demo.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A5F45D501CA50F130060ED01 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		A5F45D521CA50F130060ED01 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -295,6 +320,13 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		A529FDE31D2BA50E00C230AA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A5E108AB1D33441E00BAC167 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -625,6 +657,36 @@
 			name = Factory;
 			sourceTree = "<group>";
 		};
+		A5E108AF1D33441E00BAC167 /* Chpater18-Template */ = {
+			isa = PBXGroup;
+			children = (
+				A5E108B31D33441E00BAC167 /* AppDelegate.h */,
+				A5E108B41D33441E00BAC167 /* AppDelegate.m */,
+				A5E108C51D33444B00BAC167 /* Sandwich.h */,
+				A5E108C61D33444B00BAC167 /* Sandwich.m */,
+				A5E108C81D33451700BAC167 /* RubenSandwich.h */,
+				A5E108C91D33451700BAC167 /* RubenSandwich.m */,
+				A5E108B61D33441E00BAC167 /* ViewController.h */,
+				A5E108B71D33441E00BAC167 /* ViewController.m */,
+				A5E108B91D33441E00BAC167 /* Main.storyboard */,
+				A5E108BC1D33441E00BAC167 /* Assets.xcassets */,
+				A5E108BE1D33441E00BAC167 /* LaunchScreen.storyboard */,
+				A5E108C11D33441E00BAC167 /* Info.plist */,
+				A5E108B01D33441E00BAC167 /* Supporting Files */,
+				A5E108CB1D334C6200BAC167 /* Hamburger.h */,
+				A5E108CC1D334C6200BAC167 /* Hamburger.m */,
+			);
+			path = "Chpater18-Template";
+			sourceTree = "<group>";
+		};
+		A5E108B01D33441E00BAC167 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				A5E108B11D33441E00BAC167 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
 		A5F45D431CA50F130060ED01 = {
 			isa = PBXGroup;
 			children = (
@@ -634,6 +696,7 @@
 				A529FD951D2A583B00C230AA /* Chapter16-Decorator */,
 				A529FDC01D2B4ABA00C230AA /* Chapter16-Decorator with category */,
 				A529FDE71D2BA50E00C230AA /* Chapter17-Chain of Responsibility */,
+				A5E108AF1D33441E00BAC167 /* Chpater18-Template */,
 				A5F45D4D1CA50F130060ED01 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -647,6 +710,7 @@
 				A529FD941D2A583B00C230AA /* Chapter16-Decorator.app */,
 				A529FDBF1D2B4ABA00C230AA /* Chapter16-Decorator with category.app */,
 				A529FDE61D2BA50E00C230AA /* Chapter17-Chain of Responsibility.app */,
+				A5E108AE1D33441E00BAC167 /* Chpater18-Template.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -772,6 +836,23 @@
 			productReference = A529FDE61D2BA50E00C230AA /* Chapter17-Chain of Responsibility.app */;
 			productType = "com.apple.product-type.application";
 		};
+		A5E108AD1D33441E00BAC167 /* Chpater18-Template */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A5E108C41D33441E00BAC167 /* Build configuration list for PBXNativeTarget "Chpater18-Template" */;
+			buildPhases = (
+				A5E108AA1D33441E00BAC167 /* Sources */,
+				A5E108AB1D33441E00BAC167 /* Frameworks */,
+				A5E108AC1D33441E00BAC167 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Chpater18-Template";
+			productName = "Chpater18-Template";
+			productReference = A5E108AE1D33441E00BAC167 /* Chpater18-Template.app */;
+			productType = "com.apple.product-type.application";
+		};
 		A5F45D4B1CA50F130060ED01 /* Design Patterns With Objective-c Demo */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = A5F45D631CA50F130060ED01 /* Build configuration list for PBXNativeTarget "Design Patterns With Objective-c Demo" */;
@@ -813,6 +894,9 @@
 					A529FDE51D2BA50E00C230AA = {
 						CreatedOnToolsVersion = 7.3.1;
 					};
+					A5E108AD1D33441E00BAC167 = {
+						CreatedOnToolsVersion = 7.3.1;
+					};
 					A5F45D4B1CA50F130060ED01 = {
 						CreatedOnToolsVersion = 7.2.1;
 						DevelopmentTeam = X669CU522Z;
@@ -838,6 +922,7 @@
 				A529FD931D2A583B00C230AA /* Chapter16-Decorator */,
 				A529FDBE1D2B4ABA00C230AA /* Chapter16-Decorator with category */,
 				A529FDE51D2BA50E00C230AA /* Chapter17-Chain of Responsibility */,
+				A5E108AD1D33441E00BAC167 /* Chpater18-Template */,
 			);
 		};
 /* End PBXProject section */
@@ -890,6 +975,16 @@
 				A529FDF81D2BA50E00C230AA /* LaunchScreen.storyboard in Resources */,
 				A529FDF51D2BA50E00C230AA /* Assets.xcassets in Resources */,
 				A529FDF31D2BA50E00C230AA /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A5E108AC1D33441E00BAC167 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A5E108C01D33441E00BAC167 /* LaunchScreen.storyboard in Resources */,
+				A5E108BD1D33441E00BAC167 /* Assets.xcassets in Resources */,
+				A5E108BB1D33441E00BAC167 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -979,6 +1074,19 @@
 				A529FDEA1D2BA50E00C230AA /* main.m in Sources */,
 				A529FDFF1D2BA56E00C230AA /* Attack.m in Sources */,
 				A529FE0B1D2BA80000C230AA /* SwordAttack.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A5E108AA1D33441E00BAC167 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A5E108B81D33441E00BAC167 /* ViewController.m in Sources */,
+				A5E108CD1D334C6200BAC167 /* Hamburger.m in Sources */,
+				A5E108B51D33441E00BAC167 /* AppDelegate.m in Sources */,
+				A5E108C71D33444B00BAC167 /* Sandwich.m in Sources */,
+				A5E108CA1D33451700BAC167 /* RubenSandwich.m in Sources */,
+				A5E108B21D33441E00BAC167 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1095,6 +1203,22 @@
 			isa = PBXVariantGroup;
 			children = (
 				A529FDF71D2BA50E00C230AA /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		A5E108B91D33441E00BAC167 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A5E108BA1D33441E00BAC167 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		A5E108BE1D33441E00BAC167 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A5E108BF1D33441E00BAC167 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -1252,6 +1376,32 @@
 			};
 			name = Release;
 		};
+		A5E108C21D33441E00BAC167 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ANALYZER_NONNULL = YES;
+				INFOPLIST_FILE = "Chpater18-Template/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.kingsoft.zeek.Chpater18-Template";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		A5E108C31D33441E00BAC167 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ANALYZER_NONNULL = YES;
+				INFOPLIST_FILE = "Chpater18-Template/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.kingsoft.zeek.Chpater18-Template";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
 		A5F45D611CA50F130060ED01 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -1390,6 +1540,7 @@
 				A529FDAA1D2A583B00C230AA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A529FDD31D2B4ABA00C230AA /* Build configuration list for PBXNativeTarget "Chapter16-Decorator with category" */ = {
 			isa = XCConfigurationList;
@@ -1398,12 +1549,22 @@
 				A529FDD51D2B4ABA00C230AA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A529FDFA1D2BA50E00C230AA /* Build configuration list for PBXNativeTarget "Chapter17-Chain of Responsibility" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				A529FDFB1D2BA50E00C230AA /* Debug */,
 				A529FDFC1D2BA50E00C230AA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A5E108C41D33441E00BAC167 /* Build configuration list for PBXNativeTarget "Chpater18-Template" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A5E108C21D33441E00BAC167 /* Debug */,
+				A5E108C31D33441E00BAC167 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};
