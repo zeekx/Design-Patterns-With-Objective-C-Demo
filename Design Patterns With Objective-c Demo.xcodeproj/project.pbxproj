@@ -98,6 +98,16 @@
 		A5E108C71D33444B00BAC167 /* Sandwich.m in Sources */ = {isa = PBXBuildFile; fileRef = A5E108C61D33444B00BAC167 /* Sandwich.m */; };
 		A5E108CA1D33451700BAC167 /* RubenSandwich.m in Sources */ = {isa = PBXBuildFile; fileRef = A5E108C91D33451700BAC167 /* RubenSandwich.m */; };
 		A5E108CD1D334C6200BAC167 /* Hamburger.m in Sources */ = {isa = PBXBuildFile; fileRef = A5E108CC1D334C6200BAC167 /* Hamburger.m */; };
+		A5E108D61D33827F00BAC167 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A5E108D51D33827F00BAC167 /* main.m */; };
+		A5E108D91D33827F00BAC167 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A5E108D81D33827F00BAC167 /* AppDelegate.m */; };
+		A5E108DC1D33827F00BAC167 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A5E108DB1D33827F00BAC167 /* ViewController.m */; };
+		A5E108DF1D33827F00BAC167 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A5E108DD1D33827F00BAC167 /* Main.storyboard */; };
+		A5E108E11D33827F00BAC167 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A5E108E01D33827F00BAC167 /* Assets.xcassets */; };
+		A5E108E41D33827F00BAC167 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A5E108E21D33827F00BAC167 /* LaunchScreen.storyboard */; };
+		A5E108EB1D33869100BAC167 /* CustomTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = A5E108EA1D33869100BAC167 /* CustomTextField.m */; };
+		A5E108EE1D3386BE00BAC167 /* InputValidator.m in Sources */ = {isa = PBXBuildFile; fileRef = A5E108ED1D3386BE00BAC167 /* InputValidator.m */; };
+		A5E108F11D3387B700BAC167 /* NumbericInputValidator.m in Sources */ = {isa = PBXBuildFile; fileRef = A5E108F01D3387B700BAC167 /* NumbericInputValidator.m */; };
+		A5E108F41D3387C800BAC167 /* AlphaInputValidator.m in Sources */ = {isa = PBXBuildFile; fileRef = A5E108F31D3387C800BAC167 /* AlphaInputValidator.m */; };
 		A5F45D511CA50F130060ED01 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A5F45D501CA50F130060ED01 /* main.m */; };
 		A5F45D541CA50F130060ED01 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A5F45D531CA50F130060ED01 /* AppDelegate.m */; };
 		A5F45D571CA50F130060ED01 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A5F45D561CA50F130060ED01 /* ViewController.m */; };
@@ -278,6 +288,24 @@
 		A5E108C91D33451700BAC167 /* RubenSandwich.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RubenSandwich.m; sourceTree = "<group>"; };
 		A5E108CB1D334C6200BAC167 /* Hamburger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Hamburger.h; sourceTree = "<group>"; };
 		A5E108CC1D334C6200BAC167 /* Hamburger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Hamburger.m; sourceTree = "<group>"; };
+		A5E108D21D33827F00BAC167 /* Chapter19-Strategy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Chapter19-Strategy.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A5E108D51D33827F00BAC167 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		A5E108D71D33827F00BAC167 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		A5E108D81D33827F00BAC167 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		A5E108DA1D33827F00BAC167 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		A5E108DB1D33827F00BAC167 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		A5E108DE1D33827F00BAC167 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		A5E108E01D33827F00BAC167 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A5E108E31D33827F00BAC167 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		A5E108E51D33827F00BAC167 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A5E108E91D33869100BAC167 /* CustomTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomTextField.h; sourceTree = "<group>"; };
+		A5E108EA1D33869100BAC167 /* CustomTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomTextField.m; sourceTree = "<group>"; };
+		A5E108EC1D3386BE00BAC167 /* InputValidator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InputValidator.h; sourceTree = "<group>"; };
+		A5E108ED1D3386BE00BAC167 /* InputValidator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InputValidator.m; sourceTree = "<group>"; };
+		A5E108EF1D3387B700BAC167 /* NumbericInputValidator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NumbericInputValidator.h; sourceTree = "<group>"; };
+		A5E108F01D3387B700BAC167 /* NumbericInputValidator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NumbericInputValidator.m; sourceTree = "<group>"; };
+		A5E108F21D3387C800BAC167 /* AlphaInputValidator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AlphaInputValidator.h; sourceTree = "<group>"; };
+		A5E108F31D3387C800BAC167 /* AlphaInputValidator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AlphaInputValidator.m; sourceTree = "<group>"; };
 		A5F45D4C1CA50F130060ED01 /* Design Patterns With Objective-c Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Design Patterns With Objective-c Demo.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A5F45D501CA50F130060ED01 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		A5F45D521CA50F130060ED01 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -327,6 +355,13 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		A5E108AB1D33441E00BAC167 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A5E108CF1D33827F00BAC167 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -687,6 +722,38 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		A5E108D31D33827F00BAC167 /* Chapter19-Strategy */ = {
+			isa = PBXGroup;
+			children = (
+				A5E108D71D33827F00BAC167 /* AppDelegate.h */,
+				A5E108D81D33827F00BAC167 /* AppDelegate.m */,
+				A5E108DA1D33827F00BAC167 /* ViewController.h */,
+				A5E108DB1D33827F00BAC167 /* ViewController.m */,
+				A5E108E91D33869100BAC167 /* CustomTextField.h */,
+				A5E108EA1D33869100BAC167 /* CustomTextField.m */,
+				A5E108DD1D33827F00BAC167 /* Main.storyboard */,
+				A5E108E01D33827F00BAC167 /* Assets.xcassets */,
+				A5E108E21D33827F00BAC167 /* LaunchScreen.storyboard */,
+				A5E108E51D33827F00BAC167 /* Info.plist */,
+				A5E108D41D33827F00BAC167 /* Supporting Files */,
+				A5E108EC1D3386BE00BAC167 /* InputValidator.h */,
+				A5E108ED1D3386BE00BAC167 /* InputValidator.m */,
+				A5E108EF1D3387B700BAC167 /* NumbericInputValidator.h */,
+				A5E108F01D3387B700BAC167 /* NumbericInputValidator.m */,
+				A5E108F21D3387C800BAC167 /* AlphaInputValidator.h */,
+				A5E108F31D3387C800BAC167 /* AlphaInputValidator.m */,
+			);
+			path = "Chapter19-Strategy";
+			sourceTree = "<group>";
+		};
+		A5E108D41D33827F00BAC167 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				A5E108D51D33827F00BAC167 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
 		A5F45D431CA50F130060ED01 = {
 			isa = PBXGroup;
 			children = (
@@ -697,6 +764,7 @@
 				A529FDC01D2B4ABA00C230AA /* Chapter16-Decorator with category */,
 				A529FDE71D2BA50E00C230AA /* Chapter17-Chain of Responsibility */,
 				A5E108AF1D33441E00BAC167 /* Chpater18-Template */,
+				A5E108D31D33827F00BAC167 /* Chapter19-Strategy */,
 				A5F45D4D1CA50F130060ED01 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -711,6 +779,7 @@
 				A529FDBF1D2B4ABA00C230AA /* Chapter16-Decorator with category.app */,
 				A529FDE61D2BA50E00C230AA /* Chapter17-Chain of Responsibility.app */,
 				A5E108AE1D33441E00BAC167 /* Chpater18-Template.app */,
+				A5E108D21D33827F00BAC167 /* Chapter19-Strategy.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -853,6 +922,23 @@
 			productReference = A5E108AE1D33441E00BAC167 /* Chpater18-Template.app */;
 			productType = "com.apple.product-type.application";
 		};
+		A5E108D11D33827F00BAC167 /* Chapter19-Strategy */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A5E108E61D33827F00BAC167 /* Build configuration list for PBXNativeTarget "Chapter19-Strategy" */;
+			buildPhases = (
+				A5E108CE1D33827F00BAC167 /* Sources */,
+				A5E108CF1D33827F00BAC167 /* Frameworks */,
+				A5E108D01D33827F00BAC167 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Chapter19-Strategy";
+			productName = "Chapter19-Strategy";
+			productReference = A5E108D21D33827F00BAC167 /* Chapter19-Strategy.app */;
+			productType = "com.apple.product-type.application";
+		};
 		A5F45D4B1CA50F130060ED01 /* Design Patterns With Objective-c Demo */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = A5F45D631CA50F130060ED01 /* Build configuration list for PBXNativeTarget "Design Patterns With Objective-c Demo" */;
@@ -897,6 +983,9 @@
 					A5E108AD1D33441E00BAC167 = {
 						CreatedOnToolsVersion = 7.3.1;
 					};
+					A5E108D11D33827F00BAC167 = {
+						CreatedOnToolsVersion = 7.3.1;
+					};
 					A5F45D4B1CA50F130060ED01 = {
 						CreatedOnToolsVersion = 7.2.1;
 						DevelopmentTeam = X669CU522Z;
@@ -923,6 +1012,7 @@
 				A529FDBE1D2B4ABA00C230AA /* Chapter16-Decorator with category */,
 				A529FDE51D2BA50E00C230AA /* Chapter17-Chain of Responsibility */,
 				A5E108AD1D33441E00BAC167 /* Chpater18-Template */,
+				A5E108D11D33827F00BAC167 /* Chapter19-Strategy */,
 			);
 		};
 /* End PBXProject section */
@@ -985,6 +1075,16 @@
 				A5E108C01D33441E00BAC167 /* LaunchScreen.storyboard in Resources */,
 				A5E108BD1D33441E00BAC167 /* Assets.xcassets in Resources */,
 				A5E108BB1D33441E00BAC167 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A5E108D01D33827F00BAC167 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A5E108E41D33827F00BAC167 /* LaunchScreen.storyboard in Resources */,
+				A5E108E11D33827F00BAC167 /* Assets.xcassets in Resources */,
+				A5E108DF1D33827F00BAC167 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1087,6 +1187,20 @@
 				A5E108C71D33444B00BAC167 /* Sandwich.m in Sources */,
 				A5E108CA1D33451700BAC167 /* RubenSandwich.m in Sources */,
 				A5E108B21D33441E00BAC167 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A5E108CE1D33827F00BAC167 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A5E108F41D3387C800BAC167 /* AlphaInputValidator.m in Sources */,
+				A5E108EB1D33869100BAC167 /* CustomTextField.m in Sources */,
+				A5E108DC1D33827F00BAC167 /* ViewController.m in Sources */,
+				A5E108F11D3387B700BAC167 /* NumbericInputValidator.m in Sources */,
+				A5E108D91D33827F00BAC167 /* AppDelegate.m in Sources */,
+				A5E108D61D33827F00BAC167 /* main.m in Sources */,
+				A5E108EE1D3386BE00BAC167 /* InputValidator.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1219,6 +1333,22 @@
 			isa = PBXVariantGroup;
 			children = (
 				A5E108BF1D33441E00BAC167 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		A5E108DD1D33827F00BAC167 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A5E108DE1D33827F00BAC167 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		A5E108E21D33827F00BAC167 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A5E108E31D33827F00BAC167 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -1402,6 +1532,32 @@
 			};
 			name = Release;
 		};
+		A5E108E71D33827F00BAC167 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ANALYZER_NONNULL = YES;
+				INFOPLIST_FILE = "Chapter19-Strategy/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.kingsoft.zeek.Chapter19-Strategy";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		A5E108E81D33827F00BAC167 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ANALYZER_NONNULL = YES;
+				INFOPLIST_FILE = "Chapter19-Strategy/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.kingsoft.zeek.Chapter19-Strategy";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
 		A5F45D611CA50F130060ED01 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -1565,6 +1721,14 @@
 			buildConfigurations = (
 				A5E108C21D33441E00BAC167 /* Debug */,
 				A5E108C31D33441E00BAC167 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		A5E108E61D33827F00BAC167 /* Build configuration list for PBXNativeTarget "Chapter19-Strategy" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A5E108E71D33827F00BAC167 /* Debug */,
+				A5E108E81D33827F00BAC167 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};

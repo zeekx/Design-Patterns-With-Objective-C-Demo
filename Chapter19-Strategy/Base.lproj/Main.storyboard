@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="lFd-3V-sM8">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Number only" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="TTU-9v-PuH" customClass="CustomTextField">
+                                <rect key="frame" x="20" y="72" width="560" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="mFB-od-Osp"/>
+                                </connections>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vrN-MV-rC8">
+                                <rect key="frame" x="281" y="285" width="38" height="30"/>
+                                <state key="normal" title="Login"/>
+                            </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Alpha only" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="zjm-J0-aMj" customClass="CustomTextField">
+                                <rect key="frame" x="20" y="110" width="560" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="xFi-8j-5vi"/>
+                                </connections>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="zjm-J0-aMj" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="1JK-pe-zBX"/>
+                            <constraint firstItem="TTU-9v-PuH" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="5if-J4-QfR"/>
+                            <constraint firstItem="vrN-MV-rC8" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="78e-dH-WLc"/>
+                            <constraint firstItem="TTU-9v-PuH" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="DH9-IQ-Mrd"/>
+                            <constraint firstItem="zjm-J0-aMj" firstAttribute="leading" secondItem="TTU-9v-PuH" secondAttribute="leading" id="QKH-bF-9Za"/>
+                            <constraint firstItem="zjm-J0-aMj" firstAttribute="trailing" secondItem="TTU-9v-PuH" secondAttribute="trailing" id="XL8-zv-beR"/>
+                            <constraint firstItem="TTU-9v-PuH" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="eHK-NB-M7U"/>
+                            <constraint firstItem="vrN-MV-rC8" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="kMf-Me-s4p"/>
+                            <constraint firstItem="zjm-J0-aMj" firstAttribute="top" secondItem="TTU-9v-PuH" secondAttribute="bottom" constant="8" id="lCN-Ho-H0R"/>
+                            <constraint firstItem="TTU-9v-PuH" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="puo-uI-M41"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="DH9-IQ-Mrd"/>
+                                <exclude reference="1JK-pe-zBX"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <navigationItem key="navigationItem" id="USk-Ml-3z2"/>
+                    <connections>
+                        <outlet property="alphaTextField" destination="zjm-J0-aMj" id="pPq-te-JJj"/>
+                        <outlet property="numericTextField" destination="TTU-9v-PuH" id="eEv-Na-SW9"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1221" y="561"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="0tK-yL-gWG">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="lFd-3V-sM8" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="gHa-QT-hLm">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="skD-e1-T9w"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bGi-Io-vAK" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="494" y="561"/>
+        </scene>
+    </scenes>
+</document>

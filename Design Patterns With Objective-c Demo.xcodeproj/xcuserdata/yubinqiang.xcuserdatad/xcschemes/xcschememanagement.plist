@@ -29,6 +29,11 @@
 			<key>orderHint</key>
 			<integer>5</integer>
 		</dict>
+		<key>Chapter19-Strategy.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>7</integer>
+		</dict>
 		<key>Chpater18-Template.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
@@ -68,6 +73,11 @@
 			<true/>
 		</dict>
 		<key>A5E108AD1D33441E00BAC167</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>A5E108D11D33827F00BAC167</key>
 		<dict>
 			<key>primary</key>
 			<true/>
