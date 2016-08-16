@@ -9,5 +9,6 @@
 #import <Foundation/Foundation.h>
 
 @interface ScribbleMemento : NSObject
-@property (strong, nonatomic) NSData *data;
+@property (strong, readonly, nonatomic) NSData *data;
++ (ScribbleMemento *)mementoWithData:(NSData *)data;
 @end

@@ -7,10 +7,31 @@
 //
 
 #import "ScribbleMemento.h"
+#import "ScribbleMemento+Friend.h"
+#import "Mark.h"
+
+@interface ScribbleMemento ()
+
+@end
 
 @implementation ScribbleMemento
++ (ScribbleMemento *)mementoWithData:(NSData *)data {
+    id<Mark> restoreMark = (id<Mark>)[NSKeyedUnarchiver unarchiveObjectWithData:data];
+    ScribbleMemento *memento = [[ScribbleMemento alloc] initWithMark:restoreMark];
+    return memento;
+}
+
 - (NSData *)data {
-    assert(NO);
-    return nil;
+    NSData *data = [NSKeyedArchiver archivedDataWithRootObject:self.mark];
+    return data;
+}
+
+#pragma mark - Friend
+- (instancetype)initWithMark:(id<Mark>)mark {
+    self = [super init];
+    if (self) {
+        self.mark = mark;
+    }
+    return self;
 }
 @end

@@ -8,11 +8,15 @@
 
 #import "Scribble.h"
 #import "Stroke.h"
+#import "ScribbleMemento.h"
+#import "ScribbleMemento+Friend.h"
+#import "Mark.h"
 
 static NSString *const kMark = @"mark";
 
 @interface Scribble ()
 @property (nonatomic, strong) id<Mark> mark;
+@property (nonatomic, strong) id<Mark> incrementalMark;
 @end
 
 @implementation Scribble
@@ -24,12 +28,13 @@ static NSString *const kMark = @"mark";
     return self;
 }
 
-- (void)addMark:(id<Mark>)aMark shouldAddToPreviousMark:(BOOL)add {
+- (void)addMark:(id<Mark>)mark shouldAddToPreviousMark:(BOOL)add {
     [self willChangeValueForKey:kMark];
     if (add) {
-        [[self.mark lastChild] addMark:aMark];
+        [[self.mark lastChild] addMark:mark];
     } else {
-        [self.mark addMark:aMark];
+        [self.mark addMark:mark];
+        self.incrementalMark = mark;
     }
     [self didChangeValueForKey:kMark];
 }
@@ -40,6 +45,9 @@ static NSString *const kMark = @"mark";
     } else {
         [self willChangeValueForKey:kMark];
         [self.mark removeMark:aMark];
+        if (aMark == self.incrementalMark) {
+            self.incrementalMark = nil;
+        }
         [self didChangeValueForKey:kMark];
     }
 }
@@ -48,4 +56,41 @@ static NSString *const kMark = @"mark";
     NSMutableString *mutableString = [NSMutableString stringWithString:[self.mark description]];
     return mutableString;
 }
+
+- (instancetype)initWithMemento:(ScribbleMemento *)memento {
+    self = [super init];
+    if (memento.isCompleteSnapshot) {
+        self.mark = memento.mark;
+    } else {
+        self.mark = [[Stroke alloc] init];
+        [self attachStateFromMemento:memento];
+    }
+    return self;
+}
+
++ (Scribble *)scribbleWithMemento:(ScribbleMemento *)memento {
+    Scribble *scribble = [[Scribble alloc] initWithMemento:memento];
+    return scribble;
+}
+
+- (ScribbleMemento *)scribbleMemento {
+    return [self scribbleMementoWithCompleteSnapshot:YES];
+}
+
+- (ScribbleMemento *)scribbleMementoWithCompleteSnapshot:(BOOL)completeSnapshot {
+    id<Mark> mementoMark = self.incrementalMark;
+    if (completeSnapshot) {
+        mementoMark = self.mark;
+    } else if (mementoMark == nil) {
+        return mementoMark;
+    }
+    ScribbleMemento *memento =[[ScribbleMemento alloc] initWithMark:mementoMark];
+    memento.completedSnapshot = completeSnapshot;
+    return  memento;
+}
+
+- (void)attachStateFromMemento:(ScribbleMemento *)memento {
+    [self addMark:memento.mark shouldAddToPreviousMark:NO];
+}
+
 @end

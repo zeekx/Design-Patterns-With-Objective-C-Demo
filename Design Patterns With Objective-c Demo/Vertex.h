@@ -8,7 +8,7 @@
 
 #import "Mark.h"
 
-@interface Vertex : NSObject <Mark,  NSCopying>
+@interface Vertex : NSObject <Mark>
 @property (nonatomic, assign) CGPoint location;
 @property (nonatomic, strong) UIColor *color;
 @property (nonatomic, assign) CGFloat size;

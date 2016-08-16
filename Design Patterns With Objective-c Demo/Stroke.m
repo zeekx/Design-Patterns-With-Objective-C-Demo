@@ -83,7 +83,22 @@
     return copy;
 }
 
+#pragma mark - Coding
+- (instancetype)initWithCoder:(NSCoder *)aDecoder {
+    self = [super init];
+    if (self) {
+        self.color = [aDecoder decodeObjectForKey:@"Stroke.Color"];
+        self.size = [aDecoder decodeFloatForKey:@"Stroke.Size"];
+        self.children = [aDecoder decodeObjectForKey:@"Stroke.Children"];
+    }
+    return self;
+}
 
+- (void)encodeWithCoder:(NSCoder *)aCoder {
+    [aCoder encodeObject:self.color forKey:@"Stroke.Color"];
+    [aCoder encodeFloat:self.size forKey:@"Stroke.Size"];
+    [aCoder encodeObject:self.children forKey:@"Stroke.Children"];
+}
 
 #pragma mark - Enumerator
 - (NSEnumerator *)enumerator {

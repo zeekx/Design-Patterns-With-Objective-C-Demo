@@ -7,11 +7,18 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "ScribbleMemento.h"
-#import "Mark.h"
+
+@class ScribbleMemento;
+@protocol Mark;
 
 @interface Scribble : NSObject
 @property (strong, nonatomic) ScribbleMemento *memento;
 - (void)addMark:(id<Mark>)aMark shouldAddToPreviousMark:(BOOL)add;
 - (void)removeMark:(id<Mark>)aMark;
+
+- (instancetype)initWithMemento:(ScribbleMemento *)memento;
++ (Scribble *)scribbleWithMemento:(ScribbleMemento *)memento;
+- (ScribbleMemento *)scribbleMemento;
+- (ScribbleMemento *)scribbleMementoWithCompleteSnapshot:(BOOL)completeSnapshot;
+- (void)attachStateFromMemento:(ScribbleMemento *)memento;
 @end

@@ -8,7 +8,7 @@
 
 #import "Vertex.h"
 
-@interface Dot : Vertex <Mark, NSCopying>
+@interface Dot : Vertex <Mark>
 @property (nonatomic, strong) UIColor *color;
 @property (nonatomic, assign) CGFloat size;
 

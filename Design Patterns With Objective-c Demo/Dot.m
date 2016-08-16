@@ -40,4 +40,20 @@
 - (void)accecptMarkVisitor:(id<MarkVisitor>)visitor {
     [visitor visitDot:self];
 }
+
+#pragma mark - Coding
+- (instancetype)initWithCoder:(NSCoder *)aDecoder {
+    self = [self initWithCoder:aDecoder];
+    if (self) {
+        self.color = [aDecoder decodeObjectForKey:@"Dot.Color"];
+        self.size = [aDecoder decodeFloatForKey:@"Dot.size"];
+    }
+    return self;
+}
+
+- (void)encodeWithCoder:(NSCoder *)aCoder {
+    [super encodeWithCoder:aCoder];
+    [aCoder encodeObject:self.color forKey:@"Dot.Color"];
+    [aCoder encodeFloat:self.size forKey:@"Dot.size"];
+}
 @end

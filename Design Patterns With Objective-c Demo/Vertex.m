@@ -46,4 +46,16 @@
 - (void)accecptMarkVisitor:(id<MarkVisitor>)visitor {
     [visitor visitVertex:self];
 }
+#pragma mark - Coding
+- (instancetype)initWithCoder:(NSCoder *)aDecoder {
+    self = [super init];
+    if (self) {
+        self.location = [(NSValue *)[aDecoder decodeObjectForKey:@"Vertext.Location"] CGPointValue];
+    }
+    return self;
+}
+
+- (void)encodeWithCoder:(NSCoder *)aCoder {
+    [aCoder encodeObject:[NSValue valueWithCGPoint:self.location] forKey:@"Vertext.Location"];
+}
 @end

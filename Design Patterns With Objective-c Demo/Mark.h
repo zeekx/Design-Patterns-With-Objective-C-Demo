@@ -13,7 +13,7 @@
 #import "MarkEnumerator.h"
 #import "MarkVisitor.h"
 
-@protocol Mark <NSObject>
+@protocol Mark <NSObject, NSCopying, NSCoding>
 
 @optional
 - (NSEnumerator *)enumerator;

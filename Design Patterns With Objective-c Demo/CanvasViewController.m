@@ -88,7 +88,14 @@
         id<Mark> newStroke = [[Stroke alloc] init];
         [newStroke setSize:self.strokeSize];
         [newStroke setColor:self.strokeColor];
-        [self.scribble addMark:newStroke shouldAddToPreviousMark:NO];
+//        [self.scribble addMark:newStroke shouldAddToPreviousMark:NO];
+        NSInvocation *drawInvocation = [self drawScribbleInvocation];
+        [drawInvocation setArgument:&newStroke atIndex:2];
+        
+        NSInvocation *undrawInvocation = [self undrawScribbleInvocation];
+        [undrawInvocation setArgument:&newStroke atIndex:2];
+        
+        [self excuteInvocation:drawInvocation undoInvocation:undrawInvocation];
     }
     
     CGPoint point = [[touches anyObject] locationInView:self.canvasView];
@@ -103,9 +110,47 @@
         Dot *singleDot = [[Dot alloc] initWithLocation:point];
         [singleDot setColor:self.strokeColor];
         [singleDot setSize:self.strokeSize];
-        [self.scribble addMark:singleDot shouldAddToPreviousMark:NO];
+//        [self.scribble addMark:singleDot shouldAddToPreviousMark:NO];
+        NSInvocation *drawInvocation = [self drawScribbleInvocation];
+        [drawInvocation setArgument:&singleDot atIndex:2];
+        NSInvocation *undrawInvocation = [self undrawScribbleInvocation];
+        [undrawInvocation setArgument:&singleDot atIndex:2];
+        
+        [self excuteInvocation:drawInvocation undoInvocation:undrawInvocation];
         
     }
     self.startPoint = CGPointZero;
+}
+
+- (void)touchesCancelled:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
+    self.startPoint = CGPointZero;
+}
+#pragma mark - Invocation
+- (NSInvocation *)drawScribbleInvocation {
+    NSMethodSignature *methodSignature = [self.scribble methodSignatureForSelector:@selector(addMark:shouldAddToPreviousMark:)];
+    NSInvocation *drawInvocation = [NSInvocation invocationWithMethodSignature:methodSignature];
+    drawInvocation.target = self.scribble;
+    drawInvocation.selector = @selector(addMark:shouldAddToPreviousMark:);
+    BOOL attachToPreviousMark = NO;
+    [drawInvocation setArgument:&attachToPreviousMark atIndex:3];
+    return drawInvocation;
+}
+
+- (NSInvocation *)undrawScribbleInvocation {
+    NSMethodSignature *methodSignature = [self.scribble methodSignatureForSelector:@selector(removeMark:)];
+    NSInvocation *undrawInvocation = [NSInvocation invocationWithMethodSignature:methodSignature];
+    undrawInvocation.target = self.scribble;
+    undrawInvocation.selector = @selector(removeMark:);
+    return undrawInvocation;
+}
+
+- (void)excuteInvocation:(NSInvocation *)invocation undoInvocation:(NSInvocation *)undoInvocation {
+    [invocation retainArguments];
+    [(CanvasViewController *)[self.undoManager prepareWithInvocationTarget:self] unexcuteInvocation:undoInvocation redoInvocation:invocation];
+    [invocation invoke];
+}
+- (void)unexcuteInvocation:(NSInvocation *)invocation redoInvocation:(NSInvocation *)redoInvocation {
+    [(CanvasViewController *)[self.undoManager prepareWithInvocationTarget:self] excuteInvocation:redoInvocation undoInvocation:invocation];
+    [invocation invoke];
 }
 @end

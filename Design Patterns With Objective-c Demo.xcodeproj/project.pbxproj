@@ -82,6 +82,9 @@
 		A541E6D01CE0962B00C6BF92 /* Vertex.m in Sources */ = {isa = PBXBuildFile; fileRef = A541E6CF1CE0962B00C6BF92 /* Vertex.m */; };
 		A541E6D31CE16F6C00C6BF92 /* Dot.m in Sources */ = {isa = PBXBuildFile; fileRef = A541E6D21CE16F6C00C6BF92 /* Dot.m */; };
 		A541E6D61CE1752400C6BF92 /* Stroke.m in Sources */ = {isa = PBXBuildFile; fileRef = A541E6D51CE1752400C6BF92 /* Stroke.m */; };
+		A5920E581D38950300547AF7 /* ScribbleThumbnailView.m in Sources */ = {isa = PBXBuildFile; fileRef = A5920E571D38950300547AF7 /* ScribbleThumbnailView.m */; };
+		A5920E5B1D38959700547AF7 /* ScribbleThumbnailViewImageProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = A5920E5A1D38959700547AF7 /* ScribbleThumbnailViewImageProxy.m */; };
+		A5920E5F1D38D67F00547AF7 /* ScribbleMemento+Friend.m in Sources */ = {isa = PBXBuildFile; fileRef = A5920E5E1D38D67F00547AF7 /* ScribbleMemento+Friend.m */; };
 		A5BFED1B1CE466BC0000ED7A /* CanvasView.m in Sources */ = {isa = PBXBuildFile; fileRef = A5BFED1A1CE466BC0000ED7A /* CanvasView.m */; };
 		A5BFED211CE4672E0000ED7A /* PaperCanvasView.m in Sources */ = {isa = PBXBuildFile; fileRef = A5BFED201CE4672E0000ED7A /* PaperCanvasView.m */; };
 		A5BFED241CE4675C0000ED7A /* ClothCanvasView.m in Sources */ = {isa = PBXBuildFile; fileRef = A5BFED231CE4675C0000ED7A /* ClothCanvasView.m */; };
@@ -258,6 +261,12 @@
 		A541E6D21CE16F6C00C6BF92 /* Dot.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Dot.m; sourceTree = "<group>"; };
 		A541E6D41CE1752400C6BF92 /* Stroke.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Stroke.h; sourceTree = "<group>"; };
 		A541E6D51CE1752400C6BF92 /* Stroke.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Stroke.m; sourceTree = "<group>"; };
+		A5920E561D38950300547AF7 /* ScribbleThumbnailView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScribbleThumbnailView.h; sourceTree = "<group>"; };
+		A5920E571D38950300547AF7 /* ScribbleThumbnailView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScribbleThumbnailView.m; sourceTree = "<group>"; };
+		A5920E591D38959700547AF7 /* ScribbleThumbnailViewImageProxy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScribbleThumbnailViewImageProxy.h; sourceTree = "<group>"; };
+		A5920E5A1D38959700547AF7 /* ScribbleThumbnailViewImageProxy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScribbleThumbnailViewImageProxy.m; sourceTree = "<group>"; };
+		A5920E5D1D38D67F00547AF7 /* ScribbleMemento+Friend.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ScribbleMemento+Friend.h"; sourceTree = "<group>"; };
+		A5920E5E1D38D67F00547AF7 /* ScribbleMemento+Friend.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "ScribbleMemento+Friend.m"; sourceTree = "<group>"; };
 		A5BFED191CE466BC0000ED7A /* CanvasView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CanvasView.h; sourceTree = "<group>"; };
 		A5BFED1A1CE466BC0000ED7A /* CanvasView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CanvasView.m; sourceTree = "<group>"; };
 		A5BFED1F1CE4672E0000ED7A /* PaperCanvasView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PaperCanvasView.h; sourceTree = "<group>"; };
@@ -636,6 +645,10 @@
 				A5BFED231CE4675C0000ED7A /* ClothCanvasView.m */,
 				A505C79F1D1937DC0063588A /* CommandSlider.h */,
 				A505C7A01D1937DC0063588A /* CommandSlider.m */,
+				A5920E561D38950300547AF7 /* ScribbleThumbnailView.h */,
+				A5920E571D38950300547AF7 /* ScribbleThumbnailView.m */,
+				A5920E591D38959700547AF7 /* ScribbleThumbnailViewImageProxy.h */,
+				A5920E5A1D38959700547AF7 /* ScribbleThumbnailViewImageProxy.m */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -658,6 +671,8 @@
 				A505C87E1D1B7F540063588A /* ScribbleThumbnailProxy.m */,
 				A505C8831D1B83C60063588A /* ScribbleMemento.h */,
 				A505C8841D1B83C60063588A /* ScribbleMemento.m */,
+				A5920E5D1D38D67F00547AF7 /* ScribbleMemento+Friend.h */,
+				A5920E5E1D38D67F00547AF7 /* ScribbleMemento+Friend.m */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -1211,11 +1226,13 @@
 				A505C87C1D1B7F450063588A /* ScribbleThumbnail.m in Sources */,
 				A5BFED271CE468720000ED7A /* CanvasViewGenerator.m in Sources */,
 				A5BFED2E1CE468AD0000ED7A /* ClothCanvasViewGenerator.m in Sources */,
+				A5920E5F1D38D67F00547AF7 /* ScribbleMemento+Friend.m in Sources */,
 				A505C8821D1B7F930063588A /* Scribble.m in Sources */,
 				A5F45D571CA50F130060ED01 /* ViewController.m in Sources */,
 				A505C8791D1B7F070063588A /* ScirbbleMananger.m in Sources */,
 				A505C8921D2257DF0063588A /* NSMutableArray+Stack.m in Sources */,
 				A505C7961D1919CF0063588A /* Command.m in Sources */,
+				A5920E5B1D38959700547AF7 /* ScribbleThumbnailViewImageProxy.m in Sources */,
 				A5BFED311CE46E350000ED7A /* CanvasViewController.m in Sources */,
 				A541E6D01CE0962B00C6BF92 /* Vertex.m in Sources */,
 				A5BFED2B1CE4689C0000ED7A /* PaperCanvasViewGenerator.m in Sources */,
@@ -1227,6 +1244,7 @@
 				A505C88C1D1BD5AA0063588A /* ThumbnailViewController.m in Sources */,
 				A505C8851D1B83C60063588A /* ScribbleMemento.m in Sources */,
 				A505C87F1D1B7F540063588A /* ScribbleThumbnailProxy.m in Sources */,
+				A5920E581D38950300547AF7 /* ScribbleThumbnailView.m in Sources */,
 				A505C7A41D193CB80063588A /* PaletteViewController.m in Sources */,
 				A541E6D31CE16F6C00C6BF92 /* Dot.m in Sources */,
 				A5407E471D261ADD00F58AE2 /* MarkRenderer.m in Sources */,
@@ -1723,6 +1741,7 @@
 				A5E108C31D33441E00BAC167 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A5E108E61D33827F00BAC167 /* Build configuration list for PBXNativeTarget "Chapter19-Strategy" */ = {
 			isa = XCConfigurationList;
@@ -1731,6 +1750,7 @@
 				A5E108E81D33827F00BAC167 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A5F45D471CA50F130060ED01 /* Build configuration list for PBXProject "Design Patterns With Objective-c Demo" */ = {
 			isa = XCConfigurationList;

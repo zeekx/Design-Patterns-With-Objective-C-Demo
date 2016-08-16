@@ -57,12 +57,18 @@
         }
             break;
         case kBarButtonItemTagUnDo: {
-            
+            if (self.canvasViewController.undoManager.canUndo) {
+                [self.canvasViewController.undoManager undo];
+            }
+            return;
         }
             break;
             
         case kBarButtonItemTagReDo: {
-            
+            if (self.canvasViewController.undoManager.canRedo) {
+                [self.canvasViewController.undoManager redo];
+            }
+            return;
         }
             break;
         case kBarButtonItemTagTrash: {
