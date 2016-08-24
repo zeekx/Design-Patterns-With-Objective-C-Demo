@@ -30,6 +30,7 @@
     [self loadCanvasViewWithGenerator:[[CanvasViewGenerator alloc] init]];
     [self test];
 }
+
 - (void)test {
     Stroke *stroke = [[Stroke alloc] init];
     [stroke addMark:[[Dot alloc] initWithLocation:CGPointMake(0, 0)]];
@@ -42,6 +43,7 @@
         NSLog(@"item:%@",item);
     }];
 }
+
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
@@ -125,6 +127,7 @@
 - (void)touchesCancelled:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
     self.startPoint = CGPointZero;
 }
+
 #pragma mark - Invocation
 - (NSInvocation *)drawScribbleInvocation {
     NSMethodSignature *methodSignature = [self.scribble methodSignatureForSelector:@selector(addMark:shouldAddToPreviousMark:)];
