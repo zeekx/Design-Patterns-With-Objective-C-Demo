@@ -7,6 +7,8 @@
 //
 
 #import "CanvasView.h"
+@interface CanvasView ()
+@end
 
 @implementation CanvasView
 - (instancetype)initWithCoder:(NSCoder *)aDecoder {
@@ -32,5 +34,12 @@
     CGContextRef context = UIGraphicsGetCurrentContext();
     MarkRenderer *markRenderer = [[MarkRenderer alloc] initWithContext:context];
     [self.mark accecptMarkVisitor:markRenderer];
+}
+
+- (void)setMark:(id<Mark>)mark {
+    if (![_mark isEqual:mark]) {
+        _mark = mark;
+        [self setNeedsDisplay];
+    }
 }
 @end

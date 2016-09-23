@@ -19,16 +19,24 @@
 @end
 
 @implementation CanvasViewController
+@synthesize scribble = _scribble;
+- (instancetype)init {
+    self = [super init];
+    if (self) {
+        ;
+    }
+    return self;
+}
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     [self.navigationController setNavigationBarHidden:YES];
     self.navigationController.toolbarHidden = YES;
     
-    self.scribble = [[Scribble alloc] init];
+//    self.scribble = [[Scribble alloc] init];
     
     [self loadCanvasViewWithGenerator:[[CanvasViewGenerator alloc] init]];
-    [self test];
+//    [self test];
 }
 
 - (void)test {
@@ -50,20 +58,37 @@
 }
 
 - (void)loadCanvasViewWithGenerator:(CanvasViewGenerator *)generator {
-    [self.canvasView removeFromSuperview];
-    self.canvasView = [generator canvasViewWithFrame:self.view.bounds];
-    [self.view addSubview:self.canvasView];
+//    [self.canvasView removeFromSuperview];
+//    self.canvasView = [generator canvasViewWithFrame:self.view.bounds];
+//    [self.view addSubview:self.canvasView];
 }
 
 - (void)setScribble:(Scribble *)scribble {
+//    NSLog(@"%s observerInfo:%@ auto:%d,-%d",__PRETTY_FUNCTION__, _scribble.observationInfo
+//          ,[_scribble.class automaticallyNotifiesObserversForKey:@"mark"]
+//          ,[_scribble.class keyPathsForValuesAffectingValueForKey:@"mark"].count);
+    
     if (_scribble != scribble) {
+        __unused NSSet<NSString *> *keyPaths = [self.class keyPathsForValuesAffectingValueForKey:@"mark"];
+        if ([_scribble.class automaticallyNotifiesObserversForKey:@"mark"]) {
+            [_scribble removeObserver:self forKeyPath:@"mark" context:NULL];
+        }
         _scribble = scribble;
         //TODO:Use [self addObserver:self forKeyPath:@"scrbble.mark" options:Initial | New context:NULL] to instead it.
+//        [self addObserver:self forKeyPath:@"scrbble.mark" options:NSKeyValueObservingOptionInitial | NSKeyValueObservingOptionNew context:NULL];
+        
         [_scribble addObserver:self
                     forKeyPath:@"mark"
                        options:NSKeyValueObservingOptionNew | NSKeyValueObservingOptionInitial
                        context:NULL];
     }
+}
+
+- (Scribble *)scribble {
+    if (_scribble == nil) {
+        _scribble = [[Scribble alloc] init];
+    }
+    return _scribble;
 }
 
 - (void)dealloc {
@@ -152,8 +177,19 @@
     [(CanvasViewController *)[self.undoManager prepareWithInvocationTarget:self] unexcuteInvocation:undoInvocation redoInvocation:invocation];
     [invocation invoke];
 }
+
 - (void)unexcuteInvocation:(NSInvocation *)invocation redoInvocation:(NSInvocation *)redoInvocation {
     [(CanvasViewController *)[self.undoManager prepareWithInvocationTarget:self] excuteInvocation:redoInvocation undoInvocation:invocation];
     [invocation invoke];
+}
+
+#pragma mark - Lazy
+- (CanvasView *)canvasView {
+    if (_canvasView == nil) {
+        CanvasViewGenerator *generator = [[CanvasViewGenerator alloc] init];
+        _canvasView = [generator canvasViewWithFrame:self.view.bounds];
+        [self.view addSubview:self.canvasView];
+    }
+    return _canvasView;
 }
 @end

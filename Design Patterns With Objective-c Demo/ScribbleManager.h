@@ -1,5 +1,5 @@
 //
-//  ScirbbleMananger.h
+//  ScribbleManager.h
 //  Design Patterns With Objective-c Demo
 //
 //  Created by yubinqiang on 16/6/23.
@@ -12,7 +12,8 @@
 #import "Scribble.h"
 
 @class UIImage;
-@interface ScirbbleMananger : NSObject
+
+@interface ScribbleManager : NSObject
 - (void)saveScribble:(Scribble *)scribble thumbnail:(UIImage *)thumbnail;
 - (NSUInteger)numberOfScriblles;
 - (Scribble *)scribbleAtIndex:(NSUInteger)index;

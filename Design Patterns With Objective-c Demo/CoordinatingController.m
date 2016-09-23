@@ -9,8 +9,13 @@
 #import "CoordinatingController.h"
 #import "PaletteViewController.h"
 #import "CanvasViewController.h"
-#import "ThumbnailViewController.h"
+#import "ScribbleThumbnailCollectionViewController.h"
+#import "ScribbleManager.h"
+#import "UIView+Image.h"
 
+@interface CoordinatingController ()
+@property (strong, nonatomic) ScribbleManager *scribbleManager;
+@end
 
 @implementation CoordinatingController
 
@@ -49,10 +54,13 @@
         }
             break;
         case kBarButtonItemTagSaveScribble:{
+            [self saveSribble];
         }
             break;
         case kBarButtonItemTagOpenScribble: {
-            ThumbnailViewController *thumbnailViewController = [[ThumbnailViewController alloc] init];
+            ScribbleThumbnailCollectionViewController *thumbnailViewController = [self.storyboard instantiateViewControllerWithIdentifier:NSStringFromClass(ScribbleThumbnailCollectionViewController.class)];
+            
+            thumbnailViewController.scribbleManager = self.scribbleManager;
             self.activeViewController = thumbnailViewController;
         }
             break;
@@ -90,5 +98,17 @@
     }
 //    [self.canvasViewController presentViewController:self.activeViewController animated:YES completion:NULL];
     [self.navigationController pushViewController:self.activeViewController animated:YES];
+}
+
+- (void)saveSribble {
+    [self.scribbleManager saveScribble:self.canvasViewController.scribble thumbnail:[self.view image]];
+}
+
+#pragma mark - Lazy
+- (ScribbleManager *)scribbleManager {
+    if (_scribbleManager == nil) {
+        _scribbleManager = [[ScribbleManager alloc] init];
+    }
+    return _scribbleManager;
 }
 @end

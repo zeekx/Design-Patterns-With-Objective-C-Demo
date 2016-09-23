@@ -9,6 +9,7 @@
 #import "ScribbleMemento.h"
 
 @protocol Mark;
+
 @interface ScribbleMemento (Friend)
 @property (assign, nonatomic,getter=isCompleteSnapshot) BOOL completedSnapshot;
 @property (copy  , nonatomic) id<Mark> mark;

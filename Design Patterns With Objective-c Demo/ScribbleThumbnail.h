@@ -7,7 +7,10 @@
 //
 
 #import <Foundation/Foundation.h>
+#import <UIKit/UIImage.h>
 
 @interface ScribbleThumbnail : NSObject
-
+@property (strong, nonatomic) UIImage *image;
+@property (copy  , nonatomic) NSURL *URLOfImage;
+@property (copy  , nonatomic) NSURL *URLOfScribble;
 @end

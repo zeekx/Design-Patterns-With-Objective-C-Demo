@@ -11,4 +11,5 @@
 @interface ScribbleMemento : NSObject
 @property (strong, readonly, nonatomic) NSData *data;
 + (ScribbleMemento *)mementoWithData:(NSData *)data;
+- (BOOL)isCompletedSnapshot;
 @end

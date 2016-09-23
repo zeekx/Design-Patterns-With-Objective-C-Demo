@@ -10,11 +10,16 @@
 #import "ScribbleMemento+Friend.h"
 #import "Mark.h"
 
-@interface ScribbleMemento ()
+@interface ScribbleMemento () {
+    @private
+    id<Mark> _mark;
+    BOOL _completedSnapshot;
+}
 
 @end
 
 @implementation ScribbleMemento
+
 + (ScribbleMemento *)mementoWithData:(NSData *)data {
     id<Mark> restoreMark = (id<Mark>)[NSKeyedUnarchiver unarchiveObjectWithData:data];
     ScribbleMemento *memento = [[ScribbleMemento alloc] initWithMark:restoreMark];
@@ -26,7 +31,24 @@
     return data;
 }
 
+
 #pragma mark - Friend
+- (void)setMark:(id<Mark>)mark {
+    _mark = mark;
+}
+
+- (id<Mark>)mark {
+    return _mark;
+}
+
+- (BOOL)isCompleteSnapshot {
+    return _completedSnapshot;
+}
+
+- (void)setCompletedSnapshot:(BOOL)completedSnapshot {
+    _completedSnapshot = completedSnapshot;
+}
+
 - (instancetype)initWithMark:(id<Mark>)mark {
     self = [super init];
     if (self) {
