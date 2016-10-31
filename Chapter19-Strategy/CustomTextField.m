@@ -8,8 +8,6 @@
 
 #import "CustomTextField.h"
 #import "InputValidator.h"
-#import "NumbericInputValidator.h"
-#import "AlphaInputValidator.h"
 
 @interface CustomTextField ()
 
@@ -20,7 +18,6 @@
     NSError *validateError = nil;
     BOOL validationResult = [self.inputValidator validateInput:self error:&validateError];
     if (!validationResult && error) {
-        self.text = nil;
         *error = validateError;
     }
     return validationResult;
