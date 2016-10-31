@@ -87,6 +87,8 @@
 		A58B2A021D7D5D500027C505 /* UIView+Image.m in Sources */ = {isa = PBXBuildFile; fileRef = A58B2A011D7D5D500027C505 /* UIView+Image.m */; };
 		A5920E581D38950300547AF7 /* ScribbleThumbnailView.m in Sources */ = {isa = PBXBuildFile; fileRef = A5920E571D38950300547AF7 /* ScribbleThumbnailView.m */; };
 		A5920E5B1D38959700547AF7 /* ScribbleThumbnailViewImageProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = A5920E5A1D38959700547AF7 /* ScribbleThumbnailViewImageProxy.m */; };
+		A5B9679A1DC71C0900FA3DF2 /* NumbericTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = A5B967991DC71C0900FA3DF2 /* NumbericTextField.m */; };
+		A5B9679D1DC71C2500FA3DF2 /* AlphaTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = A5B9679C1DC71C2500FA3DF2 /* AlphaTextField.m */; };
 		A5BFED1B1CE466BC0000ED7A /* CanvasView.m in Sources */ = {isa = PBXBuildFile; fileRef = A5BFED1A1CE466BC0000ED7A /* CanvasView.m */; };
 		A5BFED211CE4672E0000ED7A /* PaperCanvasView.m in Sources */ = {isa = PBXBuildFile; fileRef = A5BFED201CE4672E0000ED7A /* PaperCanvasView.m */; };
 		A5BFED241CE4675C0000ED7A /* ClothCanvasView.m in Sources */ = {isa = PBXBuildFile; fileRef = A5BFED231CE4675C0000ED7A /* ClothCanvasView.m */; };
@@ -283,6 +285,10 @@
 		A5920E591D38959700547AF7 /* ScribbleThumbnailViewImageProxy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScribbleThumbnailViewImageProxy.h; sourceTree = "<group>"; };
 		A5920E5A1D38959700547AF7 /* ScribbleThumbnailViewImageProxy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScribbleThumbnailViewImageProxy.m; sourceTree = "<group>"; };
 		A5920E5D1D38D67F00547AF7 /* ScribbleMemento+Friend.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ScribbleMemento+Friend.h"; sourceTree = "<group>"; };
+		A5B967981DC71C0900FA3DF2 /* NumbericTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NumbericTextField.h; sourceTree = "<group>"; };
+		A5B967991DC71C0900FA3DF2 /* NumbericTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NumbericTextField.m; sourceTree = "<group>"; };
+		A5B9679B1DC71C2500FA3DF2 /* AlphaTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AlphaTextField.h; sourceTree = "<group>"; };
+		A5B9679C1DC71C2500FA3DF2 /* AlphaTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AlphaTextField.m; sourceTree = "<group>"; };
 		A5BFED191CE466BC0000ED7A /* CanvasView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CanvasView.h; sourceTree = "<group>"; };
 		A5BFED1A1CE466BC0000ED7A /* CanvasView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CanvasView.m; sourceTree = "<group>"; };
 		A5BFED1F1CE4672E0000ED7A /* PaperCanvasView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PaperCanvasView.h; sourceTree = "<group>"; };
@@ -687,6 +693,41 @@
 			name = "Thumbnail Viewer";
 			sourceTree = "<group>";
 		};
+		A5B9679E1DC71E8100FA3DF2 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				A5E108E91D33869100BAC167 /* CustomTextField.h */,
+				A5E108EA1D33869100BAC167 /* CustomTextField.m */,
+				A5B967981DC71C0900FA3DF2 /* NumbericTextField.h */,
+				A5B967991DC71C0900FA3DF2 /* NumbericTextField.m */,
+				A5B9679B1DC71C2500FA3DF2 /* AlphaTextField.h */,
+				A5B9679C1DC71C2500FA3DF2 /* AlphaTextField.m */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		A5B9679F1DC71E8A00FA3DF2 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				A5E108DA1D33827F00BAC167 /* ViewController.h */,
+				A5E108DB1D33827F00BAC167 /* ViewController.m */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		A5B967A01DC71E9500FA3DF2 /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				A5E108EC1D3386BE00BAC167 /* InputValidator.h */,
+				A5E108ED1D3386BE00BAC167 /* InputValidator.m */,
+				A5E108EF1D3387B700BAC167 /* NumbericInputValidator.h */,
+				A5E108F01D3387B700BAC167 /* NumbericInputValidator.m */,
+				A5E108F21D3387C800BAC167 /* AlphaInputValidator.h */,
+				A5E108F31D3387C800BAC167 /* AlphaInputValidator.m */,
+			);
+			name = Helper;
+			sourceTree = "<group>";
+		};
 		A5BFED1C1CE466C60000ED7A /* View */ = {
 			isa = PBXGroup;
 			children = (
@@ -791,23 +832,16 @@
 		A5E108D31D33827F00BAC167 /* Chapter19-Strategy */ = {
 			isa = PBXGroup;
 			children = (
+				A5B967A01DC71E9500FA3DF2 /* Helper */,
+				A5B9679F1DC71E8A00FA3DF2 /* Controllers */,
+				A5B9679E1DC71E8100FA3DF2 /* Views */,
+				A5E108DD1D33827F00BAC167 /* Main.storyboard */,
 				A5E108D71D33827F00BAC167 /* AppDelegate.h */,
 				A5E108D81D33827F00BAC167 /* AppDelegate.m */,
-				A5E108DA1D33827F00BAC167 /* ViewController.h */,
-				A5E108DB1D33827F00BAC167 /* ViewController.m */,
-				A5E108E91D33869100BAC167 /* CustomTextField.h */,
-				A5E108EA1D33869100BAC167 /* CustomTextField.m */,
-				A5E108DD1D33827F00BAC167 /* Main.storyboard */,
 				A5E108E01D33827F00BAC167 /* Assets.xcassets */,
+				A5E108D41D33827F00BAC167 /* Supporting Files */,
 				A5E108E21D33827F00BAC167 /* LaunchScreen.storyboard */,
 				A5E108E51D33827F00BAC167 /* Info.plist */,
-				A5E108D41D33827F00BAC167 /* Supporting Files */,
-				A5E108EC1D3386BE00BAC167 /* InputValidator.h */,
-				A5E108ED1D3386BE00BAC167 /* InputValidator.m */,
-				A5E108EF1D3387B700BAC167 /* NumbericInputValidator.h */,
-				A5E108F01D3387B700BAC167 /* NumbericInputValidator.m */,
-				A5E108F21D3387C800BAC167 /* AlphaInputValidator.h */,
-				A5E108F31D3387C800BAC167 /* AlphaInputValidator.m */,
 			);
 			path = "Chapter19-Strategy";
 			sourceTree = "<group>";
@@ -1101,6 +1135,8 @@
 					};
 					A5E108D11D33827F00BAC167 = {
 						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = WSB6LA956P;
+						ProvisioningStyle = Automatic;
 					};
 					A5E3DDC51D6D99CD00BB1600 = {
 						CreatedOnToolsVersion = 7.3.1;
@@ -1324,10 +1360,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A5B9679D1DC71C2500FA3DF2 /* AlphaTextField.m in Sources */,
 				A5E108F41D3387C800BAC167 /* AlphaInputValidator.m in Sources */,
 				A5E108EB1D33869100BAC167 /* CustomTextField.m in Sources */,
 				A5E108DC1D33827F00BAC167 /* ViewController.m in Sources */,
 				A5E108F11D3387B700BAC167 /* NumbericInputValidator.m in Sources */,
+				A5B9679A1DC71C0900FA3DF2 /* NumbericTextField.m in Sources */,
 				A5E108D91D33827F00BAC167 /* AppDelegate.m in Sources */,
 				A5E108D61D33827F00BAC167 /* main.m in Sources */,
 				A5E108EE1D3386BE00BAC167 /* InputValidator.m in Sources */,
@@ -1701,11 +1739,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ANALYZER_NONNULL = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = WSB6LA956P;
 				INFOPLIST_FILE = "Chapter19-Strategy/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.kingsoft.zeek.Chapter19-Strategy";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -1714,11 +1755,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ANALYZER_NONNULL = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = WSB6LA956P;
 				INFOPLIST_FILE = "Chapter19-Strategy/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.kingsoft.zeek.Chapter19-Strategy";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -1784,7 +1828,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -1822,7 +1866,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";

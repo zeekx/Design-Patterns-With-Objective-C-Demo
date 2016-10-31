@@ -8,8 +8,6 @@
 
 #import "ViewController.h"
 #import "CustomTextField.h"
-#import "NumbericInputValidator.h"
-#import "AlphaInputValidator.h"
 
 @interface ViewController ()
 
@@ -17,19 +15,16 @@
 
 @implementation ViewController
 
-- (void)viewDidLoad {
-    [super viewDidLoad];
-    self.numericTextField.inputValidator = [[NumbericInputValidator alloc] init];
-    self.alphaTextField.inputValidator = [[AlphaInputValidator alloc] init];
+- (BOOL)textFieldShouldReturn:(UITextField *)textField {
+    [self handleTextFieldEditing:textField];
+    return NO;
 }
-
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
-}
-
 
 - (void)textFieldDidEndEditing:(UITextField *)textField {
+    [self handleTextFieldEditing:textField];
+}
+
+- (void)handleTextFieldEditing:(UITextField *)textField {
     if (textField.text.length > 0 && [textField isKindOfClass:CustomTextField.class]) {
         NSError *error = nil;
         if (![(CustomTextField *)textField validate:&error]) {
