@@ -41,7 +41,7 @@
     return _mark;
 }
 
-- (BOOL)isCompleteSnapshot {
+- (BOOL)isCompletedSnapshot {
     return _completedSnapshot;
 }
 

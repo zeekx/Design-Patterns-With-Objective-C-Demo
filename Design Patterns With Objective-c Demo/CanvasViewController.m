@@ -115,7 +115,7 @@
         id<Mark> newStroke = [[Stroke alloc] init];
         [newStroke setSize:self.strokeSize];
         [newStroke setColor:self.strokeColor];
-//        [self.scribble addMark:newStroke shouldAddToPreviousMark:NO];
+        [self.scribble addMark:newStroke shouldAddToPreviousMark:NO];
         NSInvocation *drawInvocation = [self drawScribbleInvocation];
         [drawInvocation setArgument:&newStroke atIndex:2];
         
