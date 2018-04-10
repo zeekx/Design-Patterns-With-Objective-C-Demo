@@ -814,9 +814,9 @@
 				A5E108BC1D33441E00BAC167 /* Assets.xcassets */,
 				A5E108BE1D33441E00BAC167 /* LaunchScreen.storyboard */,
 				A5E108C11D33441E00BAC167 /* Info.plist */,
-				A5E108B01D33441E00BAC167 /* Supporting Files */,
 				A5E108CB1D334C6200BAC167 /* Hamburger.h */,
 				A5E108CC1D334C6200BAC167 /* Hamburger.m */,
+				A5E108B01D33441E00BAC167 /* Supporting Files */,
 			);
 			path = "Chpater18-Template";
 			sourceTree = "<group>";

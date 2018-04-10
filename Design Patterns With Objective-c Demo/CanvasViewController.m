@@ -58,9 +58,9 @@
 }
 
 - (void)loadCanvasViewWithGenerator:(CanvasViewGenerator *)generator {
-//    [self.canvasView removeFromSuperview];
-//    self.canvasView = [generator canvasViewWithFrame:self.view.bounds];
-//    [self.view addSubview:self.canvasView];
+    [self.canvasView removeFromSuperview];
+    self.canvasView = [generator canvasViewWithFrame:self.view.bounds];
+    [self.view addSubview:self.canvasView];
 }
 
 - (void)setScribble:(Scribble *)scribble {

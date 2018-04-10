@@ -11,7 +11,7 @@
 @protocol Mark;
 
 @interface ScribbleMemento (Friend)
-@property (assign, nonatomic,getter=isCompleteSnapshot) BOOL completedSnapshot;
+@property (assign, nonatomic,getter=isCompletedSnapshot) BOOL completedSnapshot;
 @property (copy  , nonatomic) id<Mark> mark;
 - (instancetype)initWithMark:(id<Mark>) mark;
 @end

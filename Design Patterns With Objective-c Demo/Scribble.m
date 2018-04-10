@@ -59,7 +59,7 @@ static NSString *const kMark = @"mark";
 
 - (instancetype)initWithMemento:(ScribbleMemento *)memento {
     self = [super init];
-    if ([memento isCompleteSnapshot]) {
+    if ([memento isCompletedSnapshot]) {
         self.mark = memento.mark;
     } else {
         self.mark = [[Stroke alloc] init];
